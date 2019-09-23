@@ -1,0 +1,120 @@
+@import '../variables';
+
+.urban-bar {
+  align-items: center;
+  background: white;
+  display: flex;
+  height: $urban-bar-height;
+  justify-content: space-between;
+
+  .title-area{
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .urban-logo{
+    background: url(https://www.urban.org/sites/all/themes/urban/images/logo-mini-dark.png) no-repeat;
+    background-size: 34px 34px;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+  }
+
+  h1 {
+    margin: 0 0 0 31px;
+    a {
+      color: #333;
+      font-size: 20px;
+      font-weight: 300;
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .share-area {
+    height: 100%;
+    padding-top: 9px;
+    position: relative;
+  }
+
+  .share {
+    background-color: transparent;
+    background-image: url(https://www.urban.org/sites/all/themes/urban/images/generated/icons-s8fe141aaaa.png);
+    background-position: 0 -2396px;
+    background-repeat: no-repeat;
+    border: none;
+    display: block;
+    float: none;
+    height: 32px;
+    margin: 0 auto;
+    outline: none;
+    width: 32px;
+    &:hover {
+      background-position: 0 -1948px;
+      cursor: pointer;
+    }
+  }
+
+  .share-targets {
+    background: white;
+    border: 1px solid #e6e5e5;
+    display: none;
+    height: 54px;
+    padding: 10px;
+    position: absolute;
+    right: -15px;
+    top: calc(100% - 1px);
+    width: 148px;
+    z-index: 20;
+
+    &.visible { display: block; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        a {
+          background: transparent url(https://www.urban.org/sites/all/themes/urban/images/generated/icons-s8fe141aaaa.png) no-repeat;
+          display: inline-block;
+          height: 32px;
+          text-indent: -99999px;
+          width: 32px;
+
+          &.facebook {
+            background-position: 0 -2056px;
+            &:hover { background-position: 0 -1609px; }
+          }
+
+          &.twitter {
+            background-position: 0 -1169px;
+            &:hover { background-position: 0 -1577px; }
+          }
+
+          &.email {
+            background-position: 0 -1449px;
+            &:hover { background-position: 0 -1271px; }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .urban-bar {
+    h1 {
+      margin: 0 0 0 .5rem;
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
