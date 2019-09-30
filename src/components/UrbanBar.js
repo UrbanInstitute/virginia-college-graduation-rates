@@ -1,39 +1,39 @@
-import React, { Component } from 'react';
-import { stringify } from 'qs';
+import React, {Component} from 'react'
+import {stringify} from 'qs'
 
-import './UrbanBar.scss';
+import './UrbanBar.scss'
 
 export default class UrbanBar extends Component {
   state = {
     shareOpen: false,
   };
 
-  toggleShareOpen = () => this.setState({ shareOpen: !this.state.shareOpen });
+  toggleShareOpen = () => this.setState({shareOpen: !this.state.shareOpen});
 
   shareTo = (service) => {
     const params = {
-      facebook: { u: window.location.href },
-      twitter: { text: window.location.href },
+      facebook: {u: window.location.href},
+      twitter: {text: window.location.href},
       email: {
         Subject: 'College Metrics Dashboard',
         Body: window.location.href,
       },
-    }[service];
+    }[service]
 
     const url = {
       facebook: 'https://www.facebook.com/sharer/sharer.php',
       twitter: 'http://twitter.com/intent/tweet',
       email: 'mailto:email@provider',
-    }[service];
+    }[service]
 
-    return `${url}?${stringify(params)}`;
+    return `${url}?${stringify(params)}`
   };
 
   render() {
-    const { shareOpen } = this.state;
+    const {shareOpen} = this.state
 
     return (
-      <div className="container-fluid urban-bar">
+      <div className="container-fluid urban-bar mb-5">
         <div className="title-area">
           <a
             href="http://www.urban.org"
@@ -42,7 +42,7 @@ export default class UrbanBar extends Component {
             className="urban-logo"
           >
           </a>
-          Features
+          <a href="/">Features</a>
         </div>
 
         <div className="share-area">
@@ -79,6 +79,6 @@ export default class UrbanBar extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
