@@ -7,6 +7,18 @@ html{
   }
 }
 
+.entry {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  align-items: first-baseline;
+  .entry-number {
+    @extend .display-5;
+    color: $primary;
+    margin-right: .5em;
+  }
+}
+
 .nav-pills .nav-link {
   background-color: $light-blue;
   flex: 1 1 0px;

@@ -15,9 +15,14 @@ const LowerSection = () => (
   <section>
     <div className="row mb-5">
       <div className="col-12">
-        <h2 className="h3 d-flex align-items-center"><span className="display-5 font-weight-bolder text-primary mr-4">4</span>Choose your metric for comparison</h2>
-        <div className="my-3 ml-4">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div className="entry">
+          <span className="entry-number">4</span>
+          <div class="entry-details">
+            <h2 className="h3 d-flex align-items-center">Choose your metric for comparison</h2>
+            <div className="my-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
