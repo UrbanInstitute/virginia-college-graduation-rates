@@ -3,6 +3,18 @@ import Select from 'react-select'
 
 import {schoolsList} from '../../data.js'
 
+const comparisons = [
+  {value: 'SAT', label: 'SAT Score'},
+  {value: 'GPA', label: 'HS GPA'},
+  {value: 'RACE', label: 'Race'},
+  {value: 'GENDER', label: 'Gender'},
+  {value: 'PELL', label: 'Pell Status'}
+]
+
+const tabItems = comparisons.map((comparison) =>
+  <a class="nav-link vertical-text" id={`tabs-${comparison.value}`} data-toggle="pill" href={`#tab-${comparison.value}`} role="tab" aria-controls={`tabs-${comparison.value}`}>{comparison.label}</a>
+)
+
 const LowerSection = () => (
   <section>
     <div className="row mb-5">
@@ -18,11 +30,7 @@ const LowerSection = () => (
         <div className="row">
           <div className="col-12 col-md-auto order-1 order-md-2 mt-3 pl-md-0 d-none d-md-inline-block">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link vertical-text" id="v-pills-sat-tab" data-toggle="pill" href="#v-pills-sat" role="tab" aria-controls="v-pills-sat">SAT Score</a>
-              <a class="nav-link vertical-text" id="v-pills-gpa-tab" data-toggle="pill" href="#v-pills-gpa" role="tab" aria-controls="v-pills-gpa">HS GPA</a>
-              <a class="nav-link vertical-text active" id="v-pills-race-tab" data-toggle="pill" href="#v-pills-race" role="tab" aria-controls="v-pills-race" aria-selected="true">Race</a>
-              <a class="nav-link vertical-text" id="v-pills-gender-tab" data-toggle="pill" href="#v-pills-gender" role="tab" aria-controls="v-pills-gender">Gender</a>
-              <a class="nav-link vertical-text" id="v-pills-pell-tab" data-toggle="pill" href="#v-pills-pell" role="tab" aria-controls="v-pills-pell">Pell Status</a>
+              {tabItems}
             </div>
           </div>
           <div className="col-12 col-md-11 order-2 order-md-1 pr-md-0">
