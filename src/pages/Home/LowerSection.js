@@ -1,18 +1,14 @@
 import React from 'react'
 import Select from 'react-select'
 
-import {schoolsList} from '../../data.js'
-
-const comparisons = [
-  {value: 'SAT', label: 'SAT Score'},
-  {value: 'GPA', label: 'HS GPA'},
-  {value: 'RACE', label: 'Race'},
-  {value: 'GENDER', label: 'Gender'},
-  {value: 'PELL', label: 'Pell Status'}
-]
+import {schoolsList, comparisons} from '../../data.js'
 
 const tabItems = comparisons.map((comparison) =>
   <a class="nav-link vertical-text" id={`tabs-${comparison.value}`} data-toggle="pill" href={`#tab-${comparison.value}`} role="tab" aria-controls={`tabs-${comparison.value}`}>{comparison.label}</a>
+)
+
+const tabOptions = comparisons.map((comparison) =>
+  <option value={comparison.value}>{comparison.label}</option>
 )
 
 const LowerSection = () => (
@@ -31,6 +27,14 @@ const LowerSection = () => (
           <div className="col-12 col-md-auto order-1 order-md-2 mt-3 pl-md-0 d-none d-md-inline-block">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               {tabItems}
+            </div>
+          </div>
+          <div className="col-12 col-md-auto order-0 mb-2 d-block d-md-none">
+            <div className="form-group">
+              <label className="sr-only" for="tab-dropdown">Choose your metric for comparison</label>
+              <select className="form-control" id="tab-dropdown">
+                {tabOptions}
+              </select>
             </div>
           </div>
           <div className="col-12 col-md-11 order-2 order-md-1 pr-md-0">

@@ -10,3 +10,11 @@ export const schoolsList = [
  	{value:'UofR', label: 'University of Richmond'},
  	{value:'RU', label: 'Radford University'}
 ]
+
+export const comparisons = [
+  {value: 'SAT', label: 'SAT Score'},
+  {value: 'GPA', label: 'HS GPA'},
+  {value: 'RACE', label: 'Race'},
+  {value: 'GENDER', label: 'Gender'},
+  {value: 'PELL', label: 'Pell Status'}
+]
