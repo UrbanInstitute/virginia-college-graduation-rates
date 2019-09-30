@@ -1,7 +1,8 @@
 import React from 'react'
 import Select from 'react-select'
 
-import {schoolsList} from '../../data.js'
+import SchoolSelector from '../../components/SchoolSelector'
+import SchoolChip from '../../components/SchoolChip'
 
 const Notebook = () => (
   <div className="card" style={{minHeight:700}}>
@@ -12,22 +13,9 @@ const Notebook = () => (
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
       <div>
-        <Select
-          className="basic-single"
-          classNamePrefix="select"
-          isClearable={true}
-          isMulti={true}
-          isSearchable={true}
-          name="color"
-          options={schoolsList}
-          theme={theme => ({
-            ...theme,
-            borderRadius: 0,
-            colors: {
-              ...theme.colors,
-              primary: '#3b96d3',
-            },
-          })}
+        <SchoolSelector/>
+        <SchoolChip
+          label="State average"
         />
       </div>
     </div>

@@ -1,22 +1,21 @@
 import React from 'react'
 import Select from 'react-select'
 
+import SchoolSelector from '../../components/SchoolSelector'
+import SchoolChip from '../../components/SchoolChip'
+
 import {schoolsList} from '../../data.js'
 
 
 const chips = [...Array(3)].map((e, i) => {
   const school = schoolsList[Math.floor(Math.random()*schoolsList.length)]
   return (
-    <div className="school-chip" key={i} id={school.value}>
-      <span className="school-chip-icon"/>
-      <div className="school-chip-details">
-        <h3 className="h4">{school.label}</h3>
-        <p>{school.desc}</p>
-        <div className="school-chip-close">
-          <a className="btn btn-link pl-0" href="/">X <span className="text-muted font-italic">Close</span></a>
-        </div>
-      </div>
-    </div>
+    <SchoolChip
+      label={school.label}
+      value={school.value}
+      desc={school.desc}
+      closeable
+    />
   )
 })
 
@@ -69,23 +68,7 @@ const UpperSection = () => (
             <span className="entry-number">3</span>
             <div class="entry-details">
               <h2 className="h3 d-flex align-items-center">Choose your school (optional)</h2>
-              <Select
-                className="basic-single"
-                classNamePrefix="select"
-                isClearable={true}
-                isMulti={true}
-                isSearchable={true}
-                name="color"
-                options={schoolsList}
-                theme={theme => ({
-                  ...theme,
-                  borderRadius: 0,
-                  colors: {
-                    ...theme.colors,
-                    primary: '#3b96d3',
-                  },
-                })}
-              />
+              <SchoolSelector/>
             </div>
           </div>
         </li>
@@ -93,7 +76,9 @@ const UpperSection = () => (
     </form>
     <div className="row justify-content-center mb-5">
       <div className="col-12 col-md-4 order-md-2">
-        {chips}
+        <div className="school-chips">
+          {chips}
+        </div>
       </div>
       <div className="col-12 col-md-8 order-md-1">
         <canvas className="border border-secondary w-100" style={{height: 500}}/>
