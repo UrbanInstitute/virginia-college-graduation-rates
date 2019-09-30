@@ -1,7 +1,8 @@
 import React from 'react'
-import Select from 'react-select'
 
-import {schoolsList, comparisons} from '../../data.js'
+import Notebook from './Notebook'
+
+import {comparisons} from '../../data.js'
 
 const tabItems = comparisons.map((comparison) =>
   <a class="nav-link vertical-text" id={`tabs-${comparison.value}`} data-toggle="pill" href={`#tab-${comparison.value}`} role="tab" aria-controls={`tabs-${comparison.value}`}>{comparison.label}</a>
@@ -43,34 +44,7 @@ const LowerSection = () => (
             </div>
           </div>
           <div className="col-12 col-md-11 order-2 order-md-1 pr-md-0">
-            <div className="card" style={{minHeight:700}}>
-              <div className="card-body">
-                <div className="intro-text">
-                  <small className="text-uppercase text-primary">4-Year Schools</small>
-                  <h3>How do school graduation rates compare to state averages for race?</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-                <div>
-                  <Select
-                    className="basic-single"
-                    classNamePrefix="select"
-                    isClearable={true}
-                    isMulti={true}
-                    isSearchable={true}
-                    name="color"
-                    options={schoolsList}
-                    theme={theme => ({
-                      ...theme,
-                      borderRadius: 0,
-                      colors: {
-                        ...theme.colors,
-                        primary: '#3b96d3',
-                      },
-                    })}
-                  />
-                </div>
-              </div>
-            </div>
+            <Notebook/>
           </div>
         </div>
       </div>
