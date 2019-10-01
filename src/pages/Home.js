@@ -5,7 +5,7 @@ import UpperSection from './Home/UpperSection'
 import LowerSection from './Home/LowerSection'
 
 const Home = () => (
-  <div>
+  <div className="container">
     <Header />
     <UpperSection />
     <LowerSection />
