@@ -1,5 +1,4 @@
 import React from 'react'
-import Select from 'react-select'
 
 import SchoolSelector from '../../components/SchoolSelector'
 import SchoolChip from '../../components/SchoolChip'

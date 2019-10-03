@@ -1,11 +1,11 @@
 import React from 'react'
 import Select from 'react-select'
+import {ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip,} from 'recharts'
 
 import SchoolSelector from '../../components/SchoolSelector'
 import SchoolChip from '../../components/SchoolChip'
 
 import {schoolsList} from '../../data.js'
-
 
 const chips = [...Array(3)].map((e, i) => {
   const school = schoolsList[Math.floor(Math.random()*schoolsList.length)]
@@ -81,7 +81,17 @@ const UpperSection = () => (
         </div>
       </div>
       <div className="col-12 col-md-8 order-md-1">
-        <canvas className="border border-secondary w-100" style={{height: 500}}/>
+        <ResponsiveContainer>
+          <LineChart>
+            <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} />
+            <YAxis yAxisId="line" orientation="left" dataKey="score" domain={[0, 100]} interval="preserveStartEnd" ticks={[0, 100]} tickLine={false} unit="%"/>
+            <YAxis orientation="right" />
+            <Tooltip/>
+            {schoolsList.map(s => (
+              <Line yAxisId="line" dataKey="score" data={s.data} name={s.label} key={s.value} />
+            ))}
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     </div>
   </section>
