@@ -24,7 +24,7 @@ const Header = () => (
       <div className="col-12 d-flex align-items-center flex-column text-center">
         <h1 className="display-1 font-weight-bold">College Metrics Tool</h1>
         <p className="display-4 font-weight-light mb-5">Subhead Goes Here</p>
-        <time className="font-weight-light h3" datetime="2019-09-27"><i>Sept 27th, 2019</i></time>
+        <time className="font-weight-light h3" dateTime="2019-09-27"><i>Sept 27th, 2019</i></time>
       </div>
     </div>
     <div className="row justify-content-center mb-5">

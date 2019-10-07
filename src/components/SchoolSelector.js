@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Select from 'react-select'
 
-import {schoolsList} from '../data.js'
+import DataContext from '../modules/dataContext'
 
-const SchoolSelector = () => (
+const SchoolSelector = () => {
+  const {data, schools, setSchool} = useContext(DataContext)
+  return (
     <Select
       className="basic-single mb-4"
       classNamePrefix="select"
@@ -11,7 +13,9 @@ const SchoolSelector = () => (
       isMulti={true}
       isSearchable={true}
       name="color"
-      options={schoolsList}
+      options={data.map((d)=>({label: d.college, value: d.college}))}
+      onChange={(value) => {setSchool(value)}}
+      value={schools}
       theme={theme => ({
         ...theme,
         borderRadius: 0,
@@ -21,6 +25,7 @@ const SchoolSelector = () => (
         },
       })}
     />
-)
+  )
+}
 
 export default SchoolSelector
