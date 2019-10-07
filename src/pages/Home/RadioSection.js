@@ -40,7 +40,6 @@ const RadioSection = ({type}) => {
   const value = data[type]
   const setValue = data[`set${capitalize(type)}`]
   const group = groups[type]
-  console.log(value, setValue, group, type)
   return (
     <li className="col-12 col-lg-4">
       <div className="entry">

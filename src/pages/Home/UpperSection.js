@@ -1,12 +1,10 @@
-import React, {useContext} from 'react'
-import {ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip,} from 'recharts'
-
-import DataContext from '../../modules/dataContext'
+import React from 'react'
 
 import SchoolSelector from '../../components/SchoolSelector'
 import SchoolChip from '../../components/SchoolChip'
 
 import RadioSection from './RadioSection'
+import UpperChart from './UpperChart'
 
 import {schoolsList} from '../../data.js'
 
@@ -24,12 +22,6 @@ const chips = [...Array(3)].map((e, i) => {
 })
 
 const UpperSection = () => {
-  const {
-    institution,
-    setInstitution,
-    graduation,
-    setGraduation
-  } = useContext(DataContext)
   return (
     <section>
       <form>
@@ -54,17 +46,7 @@ const UpperSection = () => {
           </div>
         </div>
         <div className="col-12 col-md-8 order-md-1">
-          <ResponsiveContainer>
-            <LineChart>
-              <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} />
-              <YAxis yAxisId="line" orientation="left" dataKey="score" domain={[0, 100]} interval="preserveStartEnd" ticks={[0, 100]} tickLine={false} unit="%"/>
-              <YAxis orientation="right" />
-              <Tooltip/>
-              {schoolsList.map(s => (
-                <Line yAxisId="line" dataKey="score" data={s.data} name={s.label} key={s.value} />
-              ))}
-            </LineChart>
-          </ResponsiveContainer>
+          <UpperChart/>
         </div>
       </div>
     </section>

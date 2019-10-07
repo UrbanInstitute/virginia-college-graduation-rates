@@ -12,6 +12,11 @@ const schema = {
     prop: 'college',
     type: String,
   },
+  grad_rate_4yr: {
+    prop: 'grad_rate_4yr',
+    type: Number,
+    parse: parsePercentage,
+  },
   grad_rate_6yr: {
     prop: 'grad_rate_6yr',
     type: Number,
