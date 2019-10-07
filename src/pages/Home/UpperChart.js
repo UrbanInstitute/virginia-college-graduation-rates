@@ -3,8 +3,10 @@ import {ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip,} from 'rech
 
 import DataContext from '../../modules/dataContext'
 
+import './UpperChart.scss'
+
 const UpperChart = () => {
-  const {graduation, data, schools} = useContext(DataContext)
+  const {graduation, data} = useContext(DataContext)
   // Place data into chart format
   const series = data.map((col) => ({
     label: col.name,
@@ -14,7 +16,7 @@ const UpperChart = () => {
     ]
   }))
   return (
-    <ResponsiveContainer>
+    <ResponsiveContainer className="upper-chart">
       <LineChart>
         <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} />
         <YAxis yAxisId="line" orientation="left" dataKey="score" domain={[0, 100]} interval="preserveStartEnd" ticks={[0, 100]} tickLine={false} unit="%"/>

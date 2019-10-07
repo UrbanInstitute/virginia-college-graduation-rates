@@ -11,8 +11,7 @@ import data from '../constants/data'
 function Home() {
   const [institution, setInstitution] = useState('4yr')
   const [graduation, setGraduation] = useState('4yr')
-  console.log(institution, graduation)
-  const [schools, setSchool] = useState()
+  const [schools, setSchool] = useState([])
   const selectedData = data[institution] ? data[institution][graduation] : data['4yr']['4yr']
   return (
     <div className="container">

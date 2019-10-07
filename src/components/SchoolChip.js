@@ -6,7 +6,8 @@ export class SchoolChip extends React.Component {
       label,
       value,
       desc,
-      closeable
+      closeable,
+      onClose,
     } = this.props
     return(
       <div className="school-chip" id={value}>
@@ -15,8 +16,8 @@ export class SchoolChip extends React.Component {
           <h3 className="h4">{label}</h3>
           <p>{desc}</p>
           { closeable ? (
-            <div className="school-chip-close">
-              <a className="btn btn-link pl-0" href="/">X <span className="text-muted font-italic">Close</span></a>
+            <div className="school-chip-close" onClick={onClose.bind(null, value)}>
+              <span className="btn btn-link pl-0" href="/">X <span className="text-muted font-italic">Close</span></span>
             </div>
           ):
             ''
