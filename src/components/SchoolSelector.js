@@ -3,6 +3,8 @@ import Select from 'react-select'
 
 import DataContext from '../modules/dataContext'
 
+import './SchoolSelector.scss'
+
 class SchoolSelector extends Component {
 
   handleChange = (value) => {
@@ -17,6 +19,7 @@ class SchoolSelector extends Component {
     return (
       <Select
         className="basic-single mb-4"
+        placeholder="Select up to 3 schools"
         classNamePrefix="select"
         isClearable={true}
         isMulti={true}
