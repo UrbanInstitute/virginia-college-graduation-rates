@@ -9,7 +9,11 @@ const parsePercentage = (value) => (
 
 const schema = {
   inst_name: {
-    prop: 'college',
+    prop: 'name',
+    type: String,
+  },
+  description: {
+    prop: 'description',
     type: String,
   },
   grad_rate_4yr: {

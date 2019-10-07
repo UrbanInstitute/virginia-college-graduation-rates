@@ -22,7 +22,7 @@ class SchoolSelector extends Component {
         isMulti={true}
         isSearchable={true}
         name="color"
-        options={data.map((d)=>({label: d.college, value: d.college}))}
+        options={data.map((d)=>({label: d.name, value: d.name}))}
         onChange={this.handleChange}
         value={schools}
         theme={theme => ({

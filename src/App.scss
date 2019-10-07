@@ -19,26 +19,6 @@ html{
   }
 }
 
-.school-chips {
-  .school-chip {
-    &:first-of-type {
-      .school-chip-icon {
-        background-color: $dark-bg;
-      }
-    }
-    &:nth-of-type(2) {
-      .school-chip-icon {
-        background-color: $primary;
-      }
-    }
-    &:last-of-type {
-      .school-chip-icon {
-        background-color: $light-blue;
-      }
-    }
-  }
-}
-
 .school-chip {
   display: flex;
   justify-content: flex-start;

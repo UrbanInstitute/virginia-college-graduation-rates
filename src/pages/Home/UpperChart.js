@@ -1,15 +1,17 @@
 import React, {useContext} from 'react'
 import {ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip,} from 'recharts'
 
+import {getSchoolColor} from '../../lib/colors'
 import DataContext from '../../modules/dataContext'
 
 import './UpperChart.scss'
 
 const UpperChart = () => {
-  const {graduation, data} = useContext(DataContext)
+  const {graduation, data, schools} = useContext(DataContext)
   // Place data into chart format
   const series = data.map((col) => ({
     label: col.name,
+    color: getSchoolColor(col.name, schools),
     data: [
       {category: 'Unadjusted Scores', score: col[`grad_rate_${graduation}`]},
       {category: 'Adjusted Scores', score: col[`adj_${graduation}_grad_rate`]},
@@ -28,6 +30,7 @@ const UpperChart = () => {
               dataKey="score"
               data={col.data}
               name={col.label}
+              stroke={col.color}
               key={i}
             />
           ))

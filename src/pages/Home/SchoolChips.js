@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+import {getSchoolColor} from '../../lib/colors'
 import DataContext from '../../modules/dataContext'
 
 import SchoolChip from '../../components/SchoolChip'
@@ -20,6 +21,7 @@ class SchoolChips extends Component {
               label={school.value}
               value={school.value}
               onClose={this.handleClose}
+              color={getSchoolColor(school.value, schools)}
               desc={'Something important here (e.g. school enrollment, school location)'}
               closeable
             />

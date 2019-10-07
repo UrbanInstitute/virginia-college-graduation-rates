@@ -3,15 +3,16 @@ import React from 'react'
 export class SchoolChip extends React.Component {
   render(){
     const {
-      label,
-      value,
-      desc,
       closeable,
+      color,
+      desc,
+      label,
       onClose,
+      value,
     } = this.props
     return(
       <div className="school-chip" id={value}>
-        <span className="school-chip-icon"/>
+        <span className="school-chip-icon" style={{background: color}}/>
         <div className="school-chip-details">
           <h3 className="h4">{label}</h3>
           <p>{desc}</p>

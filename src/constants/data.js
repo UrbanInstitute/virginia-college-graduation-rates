@@ -6,7 +6,7 @@ const data =
   '4yr': {
     '4yr': [
       {
-        'college': 'Bluefield College',
+        'name': 'Bluefield College',
         'grad_rate_4yr': 32,
         'adj_4yr_grad_rate': 43,
         'white': 38,
@@ -19,7 +19,7 @@ const data =
         'gpa_lowest_quintile': 18
       },
       {
-        'college': 'Bridgewater College',
+        'name': 'Bridgewater College',
         'grad_rate_4yr': 45,
         'adj_4yr_grad_rate': 47,
         'white': 49,
@@ -40,7 +40,7 @@ const data =
         'gpa_highest_quintile': 74
       },
       {
-        'college': 'Christopher Newport University',
+        'name': 'Christopher Newport University',
         'grad_rate_4yr': 55,
         'adj_4yr_grad_rate': 50,
         'white': 57,
@@ -60,7 +60,7 @@ const data =
         'gpa_highest_quintile': 79
       },
       {
-        'college': 'College of William and Mary',
+        'name': 'College of William and Mary',
         'grad_rate_4yr': 79,
         'adj_4yr_grad_rate': 61,
         'white': 81,
@@ -81,7 +81,7 @@ const data =
         'gpa_highest_quintile': 83
       },
       {
-        'college': 'Eastern Mennonite University',
+        'name': 'Eastern Mennonite University',
         'grad_rate_4yr': 49,
         'adj_4yr_grad_rate': 48,
         'white': 55,
@@ -97,7 +97,7 @@ const data =
         'gpa_highest_quintile': 83
       },
       {
-        'college': 'Emory and Henry College',
+        'name': 'Emory and Henry College',
         'grad_rate_4yr': 38,
         'adj_4yr_grad_rate': 41,
         'white': 43,
@@ -116,7 +116,7 @@ const data =
         'gpa_highest_quintile': 67
       },
       {
-        'college': 'Ferrum College',
+        'name': 'Ferrum College',
         'grad_rate_4yr': 18,
         'adj_4yr_grad_rate': 42,
         'white': 20,
@@ -133,7 +133,7 @@ const data =
         'gpa_mid_quintile': 47
       },
       {
-        'college': 'George Mason University',
+        'name': 'George Mason University',
         'grad_rate_4yr': 39,
         'adj_4yr_grad_rate': 37,
         'white': 41,
@@ -157,7 +157,7 @@ const data =
         'gpa_highest_quintile': 56
       },
       {
-        'college': 'Hampden-Sydney College',
+        'name': 'Hampden-Sydney College',
         'grad_rate_4yr': 54,
         'adj_4yr_grad_rate': 64,
         'white': 55,
@@ -173,7 +173,7 @@ const data =
         'gpa_mid_quintile': 59
       },
       {
-        'college': 'Hampton University',
+        'name': 'Hampton University',
         'grad_rate_4yr': 35,
         'adj_4yr_grad_rate': 47,
         'black': 35,
@@ -192,7 +192,7 @@ const data =
         'gpa_highest_quintile': 71
       },
       {
-        'college': 'Hollins University',
+        'name': 'Hollins University',
         'grad_rate_4yr': 53,
         'adj_4yr_grad_rate': 49,
         'white': 56,
@@ -206,7 +206,7 @@ const data =
         'gpa_mid_quintile': 47
       },
       {
-        'college': 'James Madison University',
+        'name': 'James Madison University',
         'grad_rate_4yr': 59,
         'adj_4yr_grad_rate': 50,
         'white': 61,
@@ -230,7 +230,7 @@ const data =
         'gpa_highest_quintile': 72
       },
       {
-        'college': 'Jefferson College of Health Sciences',
+        'name': 'Jefferson College of Health Sciences',
         'grad_rate_4yr': 39,
         'adj_4yr_grad_rate': 44,
         'white': 41,
@@ -240,7 +240,7 @@ const data =
         'sat_lowest_quintile': 19
       },
       {
-        'college': 'Liberty University',
+        'name': 'Liberty University',
         'grad_rate_4yr': 25,
         'adj_4yr_grad_rate': 35,
         'white': 30,
@@ -264,7 +264,7 @@ const data =
         'gpa_highest_quintile': 56
       },
       {
-        'college': 'Longwood University',
+        'name': 'Longwood University',
         'grad_rate_4yr': 43,
         'adj_4yr_grad_rate': 45,
         'white': 46,
@@ -286,7 +286,7 @@ const data =
         'gpa_highest_quintile': 76
       },
       {
-        'college': 'Lynchburg College',
+        'name': 'Lynchburg College',
         'grad_rate_4yr': 42,
         'adj_4yr_grad_rate': 50,
         'white': 43,
@@ -306,7 +306,7 @@ const data =
         'gpa_highest_quintile': 77
       },
       {
-        'college': 'Mary Baldwin College',
+        'name': 'Mary Baldwin College',
         'grad_rate_4yr': 32,
         'adj_4yr_grad_rate': 39,
         'white': 39,
@@ -321,7 +321,7 @@ const data =
         'gpa_mid_quintile': 28
       },
       {
-        'college': 'Marymount University',
+        'name': 'Marymount University',
         'grad_rate_4yr': 27,
         'adj_4yr_grad_rate': 38,
         'white': 31,
@@ -343,7 +343,7 @@ const data =
         'gpa_4th_quintile': 47
       },
       {
-        'college': 'Norfolk State University',
+        'name': 'Norfolk State University',
         'grad_rate_4yr': 10,
         'adj_4yr_grad_rate': 34,
         'black': 10,
@@ -361,7 +361,7 @@ const data =
         'gpa_4th_quintile': 38
       },
       {
-        'college': 'Old Dominion University',
+        'name': 'Old Dominion University',
         'grad_rate_4yr': 19,
         'adj_4yr_grad_rate': 25,
         'white': 21,
@@ -385,7 +385,7 @@ const data =
         'gpa_highest_quintile': 54
       },
       {
-        'college': 'Radford University',
+        'name': 'Radford University',
         'grad_rate_4yr': 36,
         'adj_4yr_grad_rate': 43,
         'white': 38,
@@ -408,7 +408,7 @@ const data =
         'gpa_highest_quintile': 82
       },
       {
-        'college': 'Randolph College',
+        'name': 'Randolph College',
         'grad_rate_4yr': 52,
         'adj_4yr_grad_rate': 57,
         'white': 55,
@@ -428,7 +428,7 @@ const data =
         'gpa_highest_quintile': 70
       },
       {
-        'college': 'Shenandoah University',
+        'name': 'Shenandoah University',
         'grad_rate_4yr': 35,
         'adj_4yr_grad_rate': 42,
         'white': 40,
@@ -449,7 +449,7 @@ const data =
         'gpa_highest_quintile': 67
       },
       {
-        'college': 'Southern Virginia University',
+        'name': 'Southern Virginia University',
         'grad_rate_4yr': 10,
         'adj_4yr_grad_rate': 20,
         'white': 9,
@@ -460,7 +460,7 @@ const data =
         'gpa_lowest_quintile': 0
       },
       {
-        'college': 'Sweet Briar College',
+        'name': 'Sweet Briar College',
         'grad_rate_4yr': 52,
         'adj_4yr_grad_rate': 51,
         'white': 55,
@@ -473,7 +473,7 @@ const data =
         'gpa_mid_quintile': 49
       },
       {
-        'college': 'University of Mary Washington',
+        'name': 'University of Mary Washington',
         'grad_rate_4yr': 58,
         'adj_4yr_grad_rate': 53,
         'white': 59,
@@ -497,7 +497,7 @@ const data =
         'gpa_highest_quintile': 71
       },
       {
-        'college': 'University of Richmond',
+        'name': 'University of Richmond',
         'grad_rate_4yr': 80,
         'adj_4yr_grad_rate': 68,
         'white': 84,
@@ -517,7 +517,7 @@ const data =
         'gpa_highest_quintile': 86
       },
       {
-        'college': 'University of Virginia',
+        'name': 'University of Virginia',
         'grad_rate_4yr': 87,
         'adj_4yr_grad_rate': 67,
         'white': 86,
@@ -538,7 +538,7 @@ const data =
         'gpa_highest_quintile': 88
       },
       {
-        'college': 'University of Virginia\'s College at Wise',
+        'name': 'University of Virginia\'s College at Wise',
         'grad_rate_4yr': 18,
         'adj_4yr_grad_rate': 31,
         'white': 19,
@@ -556,7 +556,7 @@ const data =
         'gpa_4th_quintile': 34
       },
       {
-        'college': 'Virginia Commonwealth University',
+        'name': 'Virginia Commonwealth University',
         'grad_rate_4yr': 31,
         'adj_4yr_grad_rate': 32,
         'white': 31,
@@ -580,7 +580,7 @@ const data =
         'gpa_highest_quintile': 54
       },
       {
-        'college': 'Virginia Military Institute',
+        'name': 'Virginia Military Institute',
         'grad_rate_4yr': 60,
         'adj_4yr_grad_rate': 63,
         'white': 62,
@@ -599,7 +599,7 @@ const data =
         'gpa_highest_quintile': 82
       },
       {
-        'college': 'Virginia State University',
+        'name': 'Virginia State University',
         'grad_rate_4yr': 29,
         'adj_4yr_grad_rate': 50,
         'black': 30,
@@ -617,7 +617,7 @@ const data =
         'gpa_4th_quintile': 45
       },
       {
-        'college': 'Virginia Tech',
+        'name': 'Virginia Tech',
         'grad_rate_4yr': 61,
         'adj_4yr_grad_rate': 49,
         'white': 63,
@@ -640,7 +640,7 @@ const data =
         'gpa_highest_quintile': 65
       },
       {
-        'college': 'Virginia Union University',
+        'name': 'Virginia Union University',
         'grad_rate_4yr': 15,
         'adj_4yr_grad_rate': 47,
         'black': 15,
@@ -653,7 +653,7 @@ const data =
         'gpa_2nd_quintile': 17
       },
       {
-        'college': 'Virginia Wesleyan College',
+        'name': 'Virginia Wesleyan College',
         'grad_rate_4yr': 40,
         'adj_4yr_grad_rate': 52,
         'white': 45,
@@ -670,7 +670,7 @@ const data =
         'gpa_4th_quintile': 53
       },
       {
-        'college': 'Washington and Lee University',
+        'name': 'Washington and Lee University',
         'grad_rate_4yr': 88,
         'adj_4yr_grad_rate': 71,
         'white': 87,
@@ -679,7 +679,7 @@ const data =
         'sat_highest_quintile': 87
       },
       {
-        'college': 'State Average',
+        'name': 'State Average',
         'white': 50,
         'black': 28,
         'hispanic': 45,
@@ -703,7 +703,7 @@ const data =
     ],
     '6yr': [
       {
-        'college': 'Bluefield College',
+        'name': 'Bluefield College',
         'grad_rate_6yr': 41,
         'adj_6yr_grad_rate': 50,
         'white': 45,
@@ -716,7 +716,7 @@ const data =
         'gpa_lowest_quintile': 29
       },
       {
-        'college': 'Bridgewater College',
+        'name': 'Bridgewater College',
         'grad_rate_6yr': 53,
         'adj_6yr_grad_rate': 54,
         'white': 57,
@@ -737,7 +737,7 @@ const data =
         'gpa_highest_quintile': 76
       },
       {
-        'college': 'Christopher Newport University',
+        'name': 'Christopher Newport University',
         'grad_rate_6yr': 70,
         'adj_6yr_grad_rate': 66,
         'white': 71,
@@ -757,7 +757,7 @@ const data =
         'gpa_highest_quintile': 86
       },
       {
-        'college': 'College of William and Mary',
+        'name': 'College of William and Mary',
         'grad_rate_6yr': 89,
         'adj_6yr_grad_rate': 76,
         'white': 91,
@@ -778,7 +778,7 @@ const data =
         'gpa_highest_quintile': 91
       },
       {
-        'college': 'Eastern Mennonite University',
+        'name': 'Eastern Mennonite University',
         'grad_rate_6yr': 60,
         'adj_6yr_grad_rate': 59,
         'white': 65,
@@ -794,7 +794,7 @@ const data =
         'gpa_highest_quintile': 88
       },
       {
-        'college': 'Emory and Henry College',
+        'name': 'Emory and Henry College',
         'grad_rate_6yr': 54,
         'adj_6yr_grad_rate': 56,
         'white': 57,
@@ -813,7 +813,7 @@ const data =
         'gpa_highest_quintile': 81
       },
       {
-        'college': 'Ferrum College',
+        'name': 'Ferrum College',
         'grad_rate_6yr': 28,
         'adj_6yr_grad_rate': 48,
         'white': 30,
@@ -830,7 +830,7 @@ const data =
         'gpa_mid_quintile': 58
       },
       {
-        'college': 'George Mason University',
+        'name': 'George Mason University',
         'grad_rate_6yr': 69,
         'adj_6yr_grad_rate': 67,
         'white': 68,
@@ -854,7 +854,7 @@ const data =
         'gpa_highest_quintile': 80
       },
       {
-        'college': 'Hampden-Sydney College',
+        'name': 'Hampden-Sydney College',
         'grad_rate_6yr': 62,
         'adj_6yr_grad_rate': 69,
         'white': 63,
@@ -870,7 +870,7 @@ const data =
         'gpa_mid_quintile': 66
       },
       {
-        'college': 'Hampton University',
+        'name': 'Hampton University',
         'grad_rate_6yr': 48,
         'adj_6yr_grad_rate': 57,
         'black': 48,
@@ -889,7 +889,7 @@ const data =
         'gpa_highest_quintile': 77
       },
       {
-        'college': 'Hollins University',
+        'name': 'Hollins University',
         'grad_rate_6yr': 56,
         'adj_6yr_grad_rate': 54,
         'white': 58,
@@ -903,7 +903,7 @@ const data =
         'gpa_mid_quintile': 47
       },
       {
-        'college': 'James Madison University',
+        'name': 'James Madison University',
         'grad_rate_6yr': 83,
         'adj_6yr_grad_rate': 76,
         'white': 84,
@@ -927,7 +927,7 @@ const data =
         'gpa_highest_quintile': 89
       },
       {
-        'college': 'Jefferson College of Health Sciences',
+        'name': 'Jefferson College of Health Sciences',
         'grad_rate_6yr': 49,
         'adj_6yr_grad_rate': 54,
         'white': 53,
@@ -937,7 +937,7 @@ const data =
         'sat_lowest_quintile': 35
       },
       {
-        'college': 'Liberty University',
+        'name': 'Liberty University',
         'grad_rate_6yr': 47,
         'adj_6yr_grad_rate': 56,
         'white': 53,
@@ -961,7 +961,7 @@ const data =
         'gpa_highest_quintile': 79
       },
       {
-        'college': 'Longwood University',
+        'name': 'Longwood University',
         'grad_rate_6yr': 65,
         'adj_6yr_grad_rate': 67,
         'white': 66,
@@ -983,7 +983,7 @@ const data =
         'gpa_highest_quintile': 84
       },
       {
-        'college': 'Lynchburg College',
+        'name': 'Lynchburg College',
         'grad_rate_6yr': 57,
         'adj_6yr_grad_rate': 65,
         'white': 58,
@@ -1003,7 +1003,7 @@ const data =
         'gpa_highest_quintile': 85
       },
       {
-        'college': 'Mary Baldwin College',
+        'name': 'Mary Baldwin College',
         'grad_rate_6yr': 37,
         'adj_6yr_grad_rate': 44,
         'white': 46,
@@ -1018,7 +1018,7 @@ const data =
         'gpa_mid_quintile': 31
       },
       {
-        'college': 'Marymount University',
+        'name': 'Marymount University',
         'grad_rate_6yr': 49,
         'adj_6yr_grad_rate': 58,
         'white': 57,
@@ -1040,7 +1040,7 @@ const data =
         'gpa_4th_quintile': 71
       },
       {
-        'college': 'Norfolk State University',
+        'name': 'Norfolk State University',
         'grad_rate_6yr': 31,
         'adj_6yr_grad_rate': 50,
         'black': 32,
@@ -1058,7 +1058,7 @@ const data =
         'gpa_4th_quintile': 68
       },
       {
-        'college': 'Old Dominion University',
+        'name': 'Old Dominion University',
         'grad_rate_6yr': 50,
         'adj_6yr_grad_rate': 54,
         'white': 50,
@@ -1082,7 +1082,7 @@ const data =
         'gpa_highest_quintile': 77
       },
       {
-        'college': 'Radford University',
+        'name': 'Radford University',
         'grad_rate_6yr': 59,
         'adj_6yr_grad_rate': 65,
         'white': 60,
@@ -1105,7 +1105,7 @@ const data =
         'gpa_highest_quintile': 94
       },
       {
-        'college': 'Randolph College',
+        'name': 'Randolph College',
         'grad_rate_6yr': 58,
         'adj_6yr_grad_rate': 61,
         'white': 60,
@@ -1125,7 +1125,7 @@ const data =
         'gpa_highest_quintile': 70
       },
       {
-        'college': 'Shenandoah University',
+        'name': 'Shenandoah University',
         'grad_rate_6yr': 54,
         'adj_6yr_grad_rate': 60,
         'white': 60,
@@ -1146,7 +1146,7 @@ const data =
         'gpa_highest_quintile': 88
       },
       {
-        'college': 'Southern Virginia University',
+        'name': 'Southern Virginia University',
         'grad_rate_6yr': 18,
         'adj_6yr_grad_rate': 27,
         'white': 19,
@@ -1157,7 +1157,7 @@ const data =
         'gpa_lowest_quintile': 3
       },
       {
-        'college': 'Sweet Briar College',
+        'name': 'Sweet Briar College',
         'grad_rate_6yr': 59,
         'adj_6yr_grad_rate': 60,
         'white': 62,
@@ -1170,7 +1170,7 @@ const data =
         'gpa_mid_quintile': 54
       },
       {
-        'college': 'University of Mary Washington',
+        'name': 'University of Mary Washington',
         'grad_rate_6yr': 71,
         'adj_6yr_grad_rate': 68,
         'white': 71,
@@ -1194,7 +1194,7 @@ const data =
         'gpa_highest_quintile': 78
       },
       {
-        'college': 'University of Richmond',
+        'name': 'University of Richmond',
         'grad_rate_6yr': 88,
         'adj_6yr_grad_rate': 79,
         'white': 89,
@@ -1214,7 +1214,7 @@ const data =
         'gpa_highest_quintile': 90
       },
       {
-        'college': 'University of Virginia',
+        'name': 'University of Virginia',
         'grad_rate_6yr': 94,
         'adj_6yr_grad_rate': 78,
         'white': 95,
@@ -1235,7 +1235,7 @@ const data =
         'gpa_highest_quintile': 95
       },
       {
-        'college': 'University of Virginia\'s College at Wise',
+        'name': 'University of Virginia\'s College at Wise',
         'grad_rate_6yr': 40,
         'adj_6yr_grad_rate': 50,
         'white': 40,
@@ -1253,7 +1253,7 @@ const data =
         'gpa_4th_quintile': 59
       },
       {
-        'college': 'Virginia Commonwealth University',
+        'name': 'Virginia Commonwealth University',
         'grad_rate_6yr': 61,
         'adj_6yr_grad_rate': 62,
         'white': 59,
@@ -1277,7 +1277,7 @@ const data =
         'gpa_highest_quintile': 80
       },
       {
-        'college': 'Virginia Military Institute',
+        'name': 'Virginia Military Institute',
         'grad_rate_6yr': 73,
         'adj_6yr_grad_rate': 76,
         'white': 74,
@@ -1296,7 +1296,7 @@ const data =
         'gpa_highest_quintile': 86
       },
       {
-        'college': 'Virginia State University',
+        'name': 'Virginia State University',
         'grad_rate_6yr': 47,
         'adj_6yr_grad_rate': 64,
         'black': 49,
@@ -1314,7 +1314,7 @@ const data =
         'gpa_4th_quintile': 67
       },
       {
-        'college': 'Virginia Tech',
+        'name': 'Virginia Tech',
         'grad_rate_6yr': 86,
         'adj_6yr_grad_rate': 76,
         'white': 87,
@@ -1337,7 +1337,7 @@ const data =
         'gpa_highest_quintile': 88
       },
       {
-        'college': 'Virginia Union University',
+        'name': 'Virginia Union University',
         'grad_rate_6yr': 34,
         'adj_6yr_grad_rate': 60,
         'black': 35,
@@ -1350,7 +1350,7 @@ const data =
         'gpa_2nd_quintile': 49
       },
       {
-        'college': 'Virginia Wesleyan College',
+        'name': 'Virginia Wesleyan College',
         'grad_rate_6yr': 45,
         'adj_6yr_grad_rate': 56,
         'white': 49,
@@ -1367,7 +1367,7 @@ const data =
         'gpa_4th_quintile': 53
       },
       {
-        'college': 'Washington and Lee University',
+        'name': 'Washington and Lee University',
         'grad_rate_6yr': 88,
         'adj_6yr_grad_rate': 74,
         'white': 87,
@@ -1376,7 +1376,7 @@ const data =
         'sat_highest_quintile': 87
       },
       {
-        'college': 'State Average',
+        'name': 'State Average',
         'white': 70,
         'black': 49,
         'hispanic': 66,
@@ -1400,9 +1400,213 @@ const data =
     ]
   },
   '2yr': {
+    '4yr': [
+      {
+        'name': 'Blue Ridge Community College',
+        'grad_rate_4yr': 17,
+        'adj_4yr_grad_rate': 16,
+        'white': 18,
+        'male': 18,
+        'female': 17,
+        'nopell': 15,
+        'pell': 23
+      },
+      {
+        'name': 'Central Virginia Community College',
+        'grad_rate_4yr': 16,
+        'adj_4yr_grad_rate': 15,
+        'white': 18,
+        'male': 20,
+        'nopell': 21
+      },
+      {
+        'name': 'Dabney S. Lancaster Community College'
+      },
+      {
+        'name': 'Danville Community College',
+        'grad_rate_4yr': 19,
+        'adj_4yr_grad_rate': 20,
+        'pell': 13
+      },
+      {
+        'name': 'Eastern Shore Community College'
+      },
+      {
+        'name': 'Germanna Community College',
+        'grad_rate_4yr': 13,
+        'adj_4yr_grad_rate': 13,
+        'nopell': 13
+      },
+      {
+        'name': 'J Sargeant Reynolds Community College',
+        'grad_rate_4yr': 10,
+        'adj_4yr_grad_rate': 11,
+        'white': 12,
+        'black': 9,
+        'male': 10,
+        'female': 9,
+        'nopell': 12,
+        'pell': 7
+      },
+      {
+        'name': 'John Tyler Community College',
+        'grad_rate_4yr': 11,
+        'adj_4yr_grad_rate': 13,
+        'white': 20,
+        'black': 2,
+        'male': 16,
+        'female': 8,
+        'nopell': 15,
+        'pell': 7
+      },
+      {
+        'name': 'Lord Fairfax Community College',
+        'grad_rate_4yr': 10,
+        'adj_4yr_grad_rate': 10,
+        'white': 12,
+        'male': 9,
+        'nopell': 9
+      },
+      {
+        'name': 'Mountain Empire Community College',
+        'grad_rate_4yr': 15,
+        'adj_4yr_grad_rate': 14,
+        'white': 16,
+        'male': 16,
+        'female': 15,
+        'pell': 13
+      },
+      {
+        'name': 'New River Community College',
+        'grad_rate_4yr': 19,
+        'adj_4yr_grad_rate': 18,
+        'white': 21,
+        'male': 23,
+        'female': 13,
+        'nopell': 23,
+        'pell': 15
+      },
+      {
+        'name': 'Northern Virginia Community College',
+        'grad_rate_4yr': 8,
+        'adj_4yr_grad_rate': 9,
+        'white': 11,
+        'black': 6,
+        'hispanic': 5,
+        'asian': 9,
+        'otherrace': 3,
+        'male': 7,
+        'female': 11,
+        'nopell': 9,
+        'pell': 7
+      },
+      {
+        'name': 'Patrick Henry Community College',
+        'grad_rate_4yr': 26,
+        'adj_4yr_grad_rate': 25,
+        'male': 31
+      },
+      {
+        'name': 'Paul D Camp Community College'
+      },
+      {
+        'name': 'Piedmont Virginia Community College'
+      },
+      {
+        'name': 'Rappahannock Community College',
+        'grad_rate_4yr': 5,
+        'adj_4yr_grad_rate': 5,
+        'white': 4,
+        'female': 5,
+        'pell': 6
+      },
+      {
+        'name': 'Southside Virginia Community College',
+        'grad_rate_4yr': 12,
+        'adj_4yr_grad_rate': 14,
+        'white': 12,
+        'black': 12,
+        'male': 9,
+        'female': 16,
+        'pell': 14
+      },
+      {
+        'name': 'Southwest Virginia Community College',
+        'grad_rate_4yr': 25,
+        'adj_4yr_grad_rate': 22,
+        'white': 24,
+        'male': 16,
+        'pell': 26
+      },
+      {
+        'name': 'Thomas Nelson Community College',
+        'grad_rate_4yr': 9,
+        'adj_4yr_grad_rate': 9,
+        'white': 17,
+        'black': 0,
+        'male': 8,
+        'female': 10,
+        'nopell': 11,
+        'pell': 5
+      },
+      {
+        'name': 'Tidewater Community College',
+        'grad_rate_4yr': 7,
+        'adj_4yr_grad_rate': 8,
+        'white': 9,
+        'black': 5,
+        'hispanic': 6,
+        'asian': 10,
+        'male': 7,
+        'female': 7,
+        'nopell': 8,
+        'pell': 6
+      },
+      {
+        'name': 'Virginia Highlands Community College',
+        'grad_rate_4yr': 21,
+        'adj_4yr_grad_rate': 18,
+        'white': 21,
+        'male': 21,
+        'pell': 23
+      },
+      {
+        'name': 'Virginia Western Community College',
+        'grad_rate_4yr': 15,
+        'adj_4yr_grad_rate': 14,
+        'white': 16,
+        'black': 8,
+        'male': 16,
+        'female': 13,
+        'nopell': 14,
+        'pell': 16
+      },
+      {
+        'name': 'Wytheville Community College',
+        'grad_rate_4yr': 18,
+        'adj_4yr_grad_rate': 16,
+        'white': 19,
+        'male': 20,
+        'female': 18,
+        'nopell': 26,
+        'pell': 14
+      },
+      {
+        'name': 'State Average',
+        'white': 14,
+        'black': 6,
+        'hispanic': 7,
+        'asian': 9,
+        'otherrace': 8,
+        'male': 11,
+        'female': 11,
+        'nopell': 11,
+        'pell': 11
+      }
+    ],
     '6yr': [
       {
-        'college': 'Blue Ridge Community College',
+        'name': 'Blue Ridge Community College',
         'grad_rate_6yr': 23,
         'adj_6yr_grad_rate': 21,
         'white': 23,
@@ -1412,7 +1616,7 @@ const data =
         'pell': 32
       },
       {
-        'college': 'Central Virginia Community College',
+        'name': 'Central Virginia Community College',
         'grad_rate_6yr': 27,
         'adj_6yr_grad_rate': 26,
         'white': 30,
@@ -1420,25 +1624,25 @@ const data =
         'nopell': 32
       },
       {
-        'college': 'Dabney S. Lancaster Community College'
+        'name': 'Dabney S. Lancaster Community College'
       },
       {
-        'college': 'Danville Community College',
+        'name': 'Danville Community College',
         'grad_rate_6yr': 26,
         'adj_6yr_grad_rate': 29,
         'pell': 19
       },
       {
-        'college': 'Eastern Shore Community College'
+        'name': 'Eastern Shore Community College'
       },
       {
-        'college': 'Germanna Community College',
+        'name': 'Germanna Community College',
         'grad_rate_6yr': 28,
         'adj_6yr_grad_rate': 29,
         'nopell': 32
       },
       {
-        'college': 'J Sargeant Reynolds Community College',
+        'name': 'J Sargeant Reynolds Community College',
         'grad_rate_6yr': 17,
         'adj_6yr_grad_rate': 20,
         'white': 18,
@@ -1449,7 +1653,7 @@ const data =
         'pell': 15
       },
       {
-        'college': 'John Tyler Community College',
+        'name': 'John Tyler Community College',
         'grad_rate_6yr': 18,
         'adj_6yr_grad_rate': 21,
         'white': 28,
@@ -1460,7 +1664,7 @@ const data =
         'pell': 15
       },
       {
-        'college': 'Lord Fairfax Community College',
+        'name': 'Lord Fairfax Community College',
         'grad_rate_6yr': 22,
         'adj_6yr_grad_rate': 22,
         'white': 24,
@@ -1468,7 +1672,7 @@ const data =
         'nopell': 19
       },
       {
-        'college': 'Mountain Empire Community College',
+        'name': 'Mountain Empire Community College',
         'grad_rate_6yr': 18,
         'adj_6yr_grad_rate': 16,
         'white': 19,
@@ -1477,7 +1681,7 @@ const data =
         'pell': 14
       },
       {
-        'college': 'New River Community College',
+        'name': 'New River Community College',
         'grad_rate_6yr': 30,
         'adj_6yr_grad_rate': 27,
         'white': 32,
@@ -1487,7 +1691,7 @@ const data =
         'pell': 24
       },
       {
-        'college': 'Northern Virginia Community College',
+        'name': 'Northern Virginia Community College',
         'grad_rate_6yr': 23,
         'adj_6yr_grad_rate': 22,
         'white': 25,
@@ -1501,19 +1705,19 @@ const data =
         'pell': 25
       },
       {
-        'college': 'Patrick Henry Community College',
+        'name': 'Patrick Henry Community College',
         'grad_rate_6yr': 33,
         'adj_6yr_grad_rate': 34,
         'male': 38
       },
       {
-        'college': 'Paul D Camp Community College'
+        'name': 'Paul D Camp Community College'
       },
       {
-        'college': 'Piedmont Virginia Community College'
+        'name': 'Piedmont Virginia Community College'
       },
       {
-        'college': 'Rappahannock Community College',
+        'name': 'Rappahannock Community College',
         'grad_rate_6yr': 14,
         'adj_6yr_grad_rate': 14,
         'white': 15,
@@ -1521,7 +1725,7 @@ const data =
         'pell': 14
       },
       {
-        'college': 'Southside Virginia Community College',
+        'name': 'Southside Virginia Community College',
         'grad_rate_6yr': 17,
         'adj_6yr_grad_rate': 21,
         'white': 15,
@@ -1531,7 +1735,7 @@ const data =
         'pell': 18
       },
       {
-        'college': 'Southwest Virginia Community College',
+        'name': 'Southwest Virginia Community College',
         'grad_rate_6yr': 26,
         'adj_6yr_grad_rate': 22,
         'white': 26,
@@ -1539,7 +1743,7 @@ const data =
         'pell': 26
       },
       {
-        'college': 'Thomas Nelson Community College',
+        'name': 'Thomas Nelson Community College',
         'grad_rate_6yr': 17,
         'adj_6yr_grad_rate': 19,
         'white': 24,
@@ -1550,7 +1754,7 @@ const data =
         'pell': 8
       },
       {
-        'college': 'Tidewater Community College',
+        'name': 'Tidewater Community College',
         'grad_rate_6yr': 16,
         'adj_6yr_grad_rate': 17,
         'white': 21,
@@ -1563,7 +1767,7 @@ const data =
         'pell': 14
       },
       {
-        'college': 'Virginia Highlands Community College',
+        'name': 'Virginia Highlands Community College',
         'grad_rate_6yr': 28,
         'adj_6yr_grad_rate': 25,
         'white': 29,
@@ -1571,7 +1775,7 @@ const data =
         'pell': 26
       },
       {
-        'college': 'Virginia Western Community College',
+        'name': 'Virginia Western Community College',
         'grad_rate_6yr': 21,
         'adj_6yr_grad_rate': 20,
         'white': 23,
@@ -1582,7 +1786,7 @@ const data =
         'pell': 19
       },
       {
-        'college': 'Wytheville Community College',
+        'name': 'Wytheville Community College',
         'grad_rate_6yr': 26,
         'adj_6yr_grad_rate': 23,
         'white': 27,
@@ -1592,7 +1796,7 @@ const data =
         'pell': 18
       },
       {
-        'college': 'State Average',
+        'name': 'State Average',
         'white': 24,
         'black': 13,
         'hispanic': 19,
