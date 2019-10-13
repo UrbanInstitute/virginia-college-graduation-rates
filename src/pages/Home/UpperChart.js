@@ -10,16 +10,28 @@ import {
 } from 'recharts'
 
 import {getSchoolColor} from '../../lib/colors'
+import {arrayMoveInPlace} from '../../lib/array'
 import DataContext from '../../modules/dataContext'
 
 import './UpperChart.scss'
 
 class UpperChart extends Component {
+
+  reorderSeries = (series) => {
+    const reordered = series.slice()
+    const schools = this.context.schools.slice()
+    schools.reverse()
+    schools.forEach(({value}) => {
+      const index = reordered.findIndex((s) => (s.label === value))
+      arrayMoveInPlace(reordered, index, reordered.length - 1)
+    })
+    return reordered
+  }
+
   render() {
     const {graduation, data, schools} = this.context
     // Place data into chart format
-    // TODO: Place our schools at beginning of array so they are on top
-    const series = data.map((col) => ({
+    let series = data.map((col) => ({
       label: col.name,
       color: getSchoolColor(col.name, schools),
       data: [
@@ -27,6 +39,9 @@ class UpperChart extends Component {
         {category: 'Adjusted Scores', score: col[`adj_${graduation}_grad_rate`]},
       ]
     }))
+    // Move our schools to end of array so they are on top of chart
+    series = this.reorderSeries(series)
+    console.log(series)
     return (
       <ResponsiveContainer className="upper-chart">
         <LineChart>
