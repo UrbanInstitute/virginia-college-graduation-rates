@@ -40,7 +40,7 @@ export const TAB_MAPPING = {
       black: 'Black',
       hispanic: 'Hispanic',
       asian: 'Asian',
-      otherrace: 'Other Race',
+      otherrace: 'Other',
     },
   },
   'GENDER': {

@@ -19,8 +19,8 @@ class ComparisonChart extends Component {
     // We are using this position to place the text next to the dots
     let averagePosition
     let metricPosition
-    const difference = (metricData - averageData) + '%'
-    console.log(difference)
+    const difference = (metricData - averageData)
+    const midPoint = Math.floor(averageData + metricData/2)
     if (averageData > metricData) {
       averagePosition = 20
       metricPosition = -50
@@ -41,6 +41,9 @@ class ComparisonChart extends Component {
           item.score = 10
           item.average = true
           item.dx = averagePosition
+        }
+        if (category === midPoint) {
+          item.text = difference
         }
         return item
       })

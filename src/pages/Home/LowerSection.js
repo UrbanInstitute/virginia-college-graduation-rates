@@ -63,7 +63,7 @@ class LowerSection extends Component  {
               <div className="col-12 col-md-auto order-0 mb-2 d-block d-md-none">
                 <div className="form-group">
                   <label className="sr-only" htmlFor="tab-dropdown">Choose your metric for comparison</label>
-                  <select className="form-control" id="tab-dropdown">
+                  <select className="form-control" id="tab-dropdown" value={selectedTab} onChange={(e) => {this.changeTab(e.target.value)}}>
                     {this.tabOptions()}
                   </select>
                 </div>
