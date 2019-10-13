@@ -5,6 +5,8 @@ import {
   Line,
 } from 'recharts'
 
+import CustomDot from '../../components/CustomDot'
+
 import {getSchoolColor} from '../../lib/colors'
 import DataContext from '../../modules/dataContext'
 
@@ -38,8 +40,8 @@ class ComparisonChart extends Component {
             dataKey="score"
             data={line.data}
             name={line.label}
-            stroke={line.color}
-            dot={{stroke: line.color, fill: line.color, r: 5}}
+            stroke="#353535"
+            dot={<CustomDot stroke={line.color} fill={line.color} r={10} />}
             connectNulls
           />
         </LineChart>
