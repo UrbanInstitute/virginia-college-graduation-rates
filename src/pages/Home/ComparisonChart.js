@@ -16,7 +16,18 @@ class ComparisonChart extends Component {
   render() {
     const {schools} = this.context
     const {school, averageData, metricData, categories} = this.props
-    // Place data into chart format
+    // We are using this position to place the text next to the dots
+    let averagePosition
+    let metricPosition
+    const difference = (metricData - averageData) + '%'
+    console.log(difference)
+    if (averageData > metricData) {
+      averagePosition = 20
+      metricPosition = -50
+    } else {
+      averagePosition = -50
+      metricPosition = 20
+    }
     const line = {
       label: school.value,
       color: getSchoolColor(school, schools),
@@ -24,10 +35,12 @@ class ComparisonChart extends Component {
         const item = {category}
         if (category === metricData) {
           item.score = 10
+          item.dx = metricPosition
         }
         if (category === averageData) {
           item.score = 10
           item.average = true
+          item.dx = averagePosition
         }
         return item
       })

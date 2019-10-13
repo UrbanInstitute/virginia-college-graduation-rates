@@ -17,7 +17,6 @@ class Dot extends Component {
   };
 
   render() {
-    console.log(this.props.payload)
     const {cx, cy, r, className, payload} = this.props
     const layerClass = classNames('recharts-dot', className)
     const copiedProps = Object.assign({}, this.props)
@@ -27,14 +26,24 @@ class Dot extends Component {
     }
     if (cx === +cx && cy === +cy && r === +r) {
       return (
-        <circle
-          {...getPresentationAttributes(copiedProps)}
-          {...filterEventAttributes(this.props, null, true)}
-          className={layerClass}
-          cx={cx}
-          cy={cy}
-          r={r}
-        />
+        <React.Fragment>
+          <text
+            x={cx}
+            y={cy}
+            dx={payload.dx}
+            dy={5}
+            color="#353535"
+
+          >{payload.category}%</text>
+          <circle
+            {...getPresentationAttributes(copiedProps)}
+            {...filterEventAttributes(this.props, null, true)}
+            className={layerClass}
+            cx={cx}
+            cy={cy}
+            r={r}
+          />
+        </React.Fragment>
       )
     }
 
