@@ -18,6 +18,7 @@ class UpperChart extends Component {
   render() {
     const {graduation, data, schools} = this.context
     // Place data into chart format
+    // TODO: Place our schools at beginning of array so they are on top
     const series = data.map((col) => ({
       label: col.name,
       color: getSchoolColor(col.name, schools),
@@ -42,6 +43,7 @@ class UpperChart extends Component {
                 stroke={col.color}
                 dot={{stroke: col.color, fill: col.color, r: 5}}
                 key={i}
+                connectNulls={true}
               />
             ))
           }
@@ -54,5 +56,3 @@ class UpperChart extends Component {
 UpperChart.contextType = DataContext
 
 export default UpperChart
-
-const renderLabel = (entry) => (entry.name)
