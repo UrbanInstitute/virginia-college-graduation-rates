@@ -11,6 +11,7 @@ class SchoolChips extends Component {
     setSchool(schools.filter((skewl) => (skewl.value !== school)))
   }
   render() {
+    const {hideDescription} = this.props
     const {schools} = this.context
     return (
       <div className="school-chips">
@@ -22,7 +23,7 @@ class SchoolChips extends Component {
               value={school.value}
               onClose={this.handleClose}
               color={getSchoolColor(school.value, schools)}
-              desc={'Something important here (e.g. school enrollment, school location)'}
+              desc={hideDescription ? null : 'Something important here (e.g. school enrollment, school location)'}
               closeable
             />
           ))

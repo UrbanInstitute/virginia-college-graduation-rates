@@ -5,6 +5,7 @@ import {TAB_MAPPING} from '../../constants/mappings'
 import SchoolSelector from '../../components/SchoolSelector'
 import SchoolChip from '../../components/SchoolChip'
 import LowerChart from './LowerChart'
+import SchoolChips from './SchoolChips'
 
 const Notebook = ({selectedTab}) => (
   <div className="card" style={{minHeight:700}}>
@@ -19,6 +20,7 @@ const Notebook = ({selectedTab}) => (
           label="State average"
         />
         <SchoolSelector/>
+        <SchoolChips hideDescription={true} />
       </div>
       <LowerChart items={TAB_MAPPING[selectedTab]['items']} />
     </div>
