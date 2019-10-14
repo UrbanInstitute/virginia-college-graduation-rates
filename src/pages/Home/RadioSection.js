@@ -42,7 +42,9 @@ class RadioSection extends Component {
     const data = this.context
     const setValue = data[`set${capitalize(type)}`]
     setValue(val.target.value)
-    data.setSchool([])
+    if (type === 'institution') {
+      data.setSchool([])
+    }
   }
 
   render() {
