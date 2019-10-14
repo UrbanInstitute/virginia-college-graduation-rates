@@ -24,7 +24,7 @@ class LowerChart extends Component {
     const max = Math.max(...allValues)
     const min = Math.min(...allValues)
     // Create an array of numbers from our min to max
-    const categories = range(min - 10, max + 10, 1)
+    const categories = range(min, max, 1)
     return map(items, (label, metric) => {
       return (
         <div style={{minHeight: '50px'}} key={metric}>
