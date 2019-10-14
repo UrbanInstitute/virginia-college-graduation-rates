@@ -1,12 +1,9 @@
-/**
- * @fileOverview Dot
- */
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import {getPresentationAttributes, filterEventAttributes} from 'recharts/src//util/ReactUtils'
 
-class Dot extends Component {
+class Dot extends PureComponent {
   static displayName = 'Dot';
 
   static propTypes = {

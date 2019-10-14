@@ -35,7 +35,7 @@ class LowerChart extends Component {
                 key={i}
                 categories={categories}
                 school={school}
-                metricData={schoolsData[school][metric]}
+                metricData={schoolsData[school] ? schoolsData[school][metric] : null}
                 averageData={averageData[metric]}
               />
             ))

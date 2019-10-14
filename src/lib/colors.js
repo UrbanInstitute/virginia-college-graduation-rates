@@ -1,8 +1,8 @@
 // The three colors we use for selected schools
 const colors = [
   '#231f20',
-  '#3b96d3',
-  '#CFE8F3',
+  '#1696D2',
+  '#73BFE2',
 ]
 
 // Determines which color to dispay for graphs and chips

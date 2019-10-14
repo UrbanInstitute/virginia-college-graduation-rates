@@ -1,15 +1,25 @@
 import React, {Component} from 'react'
+import {forEach} from 'lodash'
 
-import DataContext from '../../constants/data'
+import DataContext from '../../modules/dataContext'
 import {TAB_MAPPING} from '../../constants/mappings'
 
 import Notebook from './Notebook'
 
-const tabs = Object.keys(TAB_MAPPING)
-
 class LowerSection extends Component  {
   state = {
-    selectedTab: tabs[0],
+    selectedTab: null,
+  }
+
+  tabs = () => {
+    const {institution} = this.context
+    const tabs = []
+    forEach(TAB_MAPPING, (tab, name) => {
+      if (tab.institution === undefined || tab.institution === institution) {
+        tabs.push(name)
+      }
+    })
+    return tabs
   }
 
   changeTab = (newTab) => {
@@ -17,8 +27,8 @@ class LowerSection extends Component  {
   }
 
   tabItems = () => {
-    const {selectedTab} = this.state
-    return tabs.map((tab, i) =>
+    const selectedTab = this.state.selectedTab || this.tabs()[0]
+    return this.tabs().map((tab, i) =>
       <span
         key={i}
         className={`nav-link vertical-text ${selectedTab === tab ? 'active' : ''}`}
@@ -30,13 +40,13 @@ class LowerSection extends Component  {
   }
 
   tabOptions = () => {
-    return tabs.map((tab, i) =>
+    return this.tabs().map((tab, i) =>
       <option key={i} value={tab}>{tab}</option>
     )
   }
 
   render() {
-    const selectedTab = this.state.selectedTab || tabs[0]
+    const selectedTab = this.state.selectedTab || this.tabs()[0]
     return (
       <section>
         <div className="row mb-5">

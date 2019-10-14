@@ -58,6 +58,7 @@ class ComparisonChart extends Component {
             name={line.label}
             stroke="#353535"
             dot={<CustomDot stroke={line.color} fill={line.color} r={10} />}
+            animationDuration={1000}
             connectNulls
           />
         </LineChart>

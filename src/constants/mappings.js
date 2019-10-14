@@ -1,5 +1,6 @@
 export const TAB_MAPPING = {
   'SAT SCORE': {
+    institution: '4yr',
     heading: 'How do school graduation rates compare to state averages for SAT scores?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
@@ -11,6 +12,7 @@ export const TAB_MAPPING = {
     },
   },
   'TEST SCORE': {
+    institution: '2yr',
     heading: 'How do school graduation rates compare to state averages for test scores?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
@@ -22,6 +24,7 @@ export const TAB_MAPPING = {
     },
   },
   'HS GPA': {
+    institution: '4yr',
     heading: 'How do school graduation rates compare to state averages for high school GPA?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
