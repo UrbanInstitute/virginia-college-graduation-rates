@@ -6,6 +6,8 @@ import {TAB_MAPPING} from '../../constants/mappings'
 
 import Notebook from './Notebook'
 
+import './LowerSection.scss'
+
 class LowerSection extends Component  {
   state = {
     selectedTab: null,
