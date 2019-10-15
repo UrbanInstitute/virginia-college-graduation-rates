@@ -80,7 +80,7 @@ class LowerSection extends Component  {
                   </select>
                 </div>
               </div>
-              <div className="col-12 col-md-11 order-2 order-md-1 pr-md-0">
+              <div className="col-12 col-md-10 order-2 order-md-1 pr-md-0">
                 <Notebook selectedTab={selectedTab}/>
               </div>
             </div>

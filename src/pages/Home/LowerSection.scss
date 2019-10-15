@@ -1,5 +1,39 @@
+@import '../../variables';
+
 .nav-link {
   &.vertical-text {
     cursor: pointer;
   }
+}
+
+.nav-pills .nav-link {
+  background-color: $light-blue;
+  flex: 1 1 0px;
+  margin: .5em 0;
+  white-space: nowrap;
+  color: $black;
+  border-radius: 0px .25em .25em 0;
+  text-transform: uppercase;
+  padding: 1.25rem .5rem 1.25rem .125rem;
+  text-align: center;
+  &.active {
+    position: relative;
+    background-color: $active-tab;
+    z-index: 1;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: $active-tab;
+      left: -.375em;
+      width: .375em;
+      border-radius: .25em 0 0 .25em;
+    }
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
 }
