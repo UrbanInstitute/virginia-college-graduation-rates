@@ -44,36 +44,6 @@ html{
   }
 }
 
-.nav-pills .nav-link {
-  background-color: $light-blue;
-  flex: 1 1 0px;
-  margin: .5em 0;
-  white-space: nowrap;
-  color: $black;
-  border-radius: 0px .25em .25em 0;
-  text-transform: uppercase;
-  padding: .75rem .5rem .75rem .125rem;
-  text-align: center;
-  &.active {
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      background-color: $primary;
-      left: -.375em;
-      width: .375em;
-      border-radius: .25em 0 0 .25em;
-    }
-  }
-}
-
-.vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-}
-
 .card{
   &::before {
     background-image: url("./images/notebook-binding.png");
