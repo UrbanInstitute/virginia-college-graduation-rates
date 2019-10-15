@@ -32,8 +32,9 @@ class LowerChart extends Component {
     const categories = range(min, max, 1)
     return map(items, (label, metric) => {
       return (
-        <div style={{minHeight: '50px'}} key={metric}>
+        <div style={{minHeight: '50px', marginBottom: '2em'}} key={metric}>
           <h3>{label}</h3>
+          <hr className="my-1"/>
           {
             schoolArray.length > 0 ?
             schoolArray.map((school, i)=>(

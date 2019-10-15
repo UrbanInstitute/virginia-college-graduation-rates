@@ -18,7 +18,7 @@ const Notebook = ({selectedTab}) => {
           <h3>{TAB_MAPPING[selectedTab]['heading']}</h3>
           <p>{TAB_MAPPING[selectedTab]['subheading']}</p>
         </div>
-        <div>
+        <div className="mb-5">
           <SchoolChip
             label="State average"
           />
