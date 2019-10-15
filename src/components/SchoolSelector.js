@@ -28,6 +28,7 @@ class SchoolSelector extends Component {
         options={data.map((d)=>({label: d.name, value: d.name}))}
         onChange={this.handleChange}
         value={schools}
+        isDisabled={schools.length >= 3}
         theme={theme => ({
           ...theme,
           borderRadius: 0,
