@@ -29,7 +29,7 @@ class ComparisonChart extends Component {
       metricPosition = 20
     }
     const line = {
-      label: school.value,
+      label: school ? school.value : 'State Average',
       color: getSchoolColor(school, schools),
       data: categories.map((category) => {
         const item = {category}
@@ -60,7 +60,7 @@ class ComparisonChart extends Component {
             name={line.label}
             stroke="#353535"
             dot={<CustomDot stroke={line.color} fill={line.color} r={10} />}
-            animationDuration={1000}
+            animationDuration={500}
             connectNulls
           />
         </LineChart>

@@ -20,7 +20,12 @@ class LowerChart extends Component {
         averageData = col
       }
     })
-    const allValues = flatMap(data, (col) => (schoolArray.includes(col['name']) ? getTabData(col, itemKeys) : null)).filter((n)=>(n))
+    let allValues = flatMap(data, (col) => (schoolArray.includes(col['name']) ? getTabData(col, itemKeys) : null)).filter((n)=>(n))
+    // We still want to show averages if we have no school data
+    // This sets the chart min and max to 0, 100
+    if (allValues.length === 0) {
+      allValues = [0, 100]
+    }
     const max = Math.max(...allValues)
     const min = Math.min(...allValues)
     // Create an array of numbers from our min to max
@@ -30,6 +35,7 @@ class LowerChart extends Component {
         <div style={{minHeight: '50px'}} key={metric}>
           <h3>{label}</h3>
           {
+            schoolArray.length > 0 ?
             schoolArray.map((school, i)=>(
               <ComparisonChart
                 key={i}
@@ -38,7 +44,11 @@ class LowerChart extends Component {
                 metricData={schoolsData[school] ? schoolsData[school][metric] : null}
                 averageData={averageData[metric]}
               />
-            ))
+            )) :
+            <ComparisonChart
+              categories={categories}
+              averageData={averageData[metric]}
+            />
           }
         </div>
       )
