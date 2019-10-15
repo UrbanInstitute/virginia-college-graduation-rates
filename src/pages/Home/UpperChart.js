@@ -121,7 +121,7 @@ class UpperChart extends Component {
         <LineChart
           margin={{left: margin}}
         >
-          <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} />
+          <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} tickMargin={10} />
           <YAxis
             yAxisId="line"
             dataKey="score"
@@ -130,8 +130,8 @@ class UpperChart extends Component {
             orientation="left"
             tickLine={false}
             ticks={[0, 100]}
-            unit="%"/
-          >
+            unit="%"
+          />
           <YAxis orientation="right" />
           {
             series.map(this.renderLine)
