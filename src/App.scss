@@ -5,6 +5,13 @@ html{
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 14px;
   }
+  body {
+    -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+  }
+  p {
+    text-rendering: optimizeLegibility;
+  }
 }
 
 .entry {
