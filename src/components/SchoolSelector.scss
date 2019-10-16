@@ -5,3 +5,9 @@
 .select__indicator.select__clear-indicator {
   display: none !important;
 }
+
+.select--is-disabled {
+  .select__control {
+    box-shadow: none;
+  }
+}

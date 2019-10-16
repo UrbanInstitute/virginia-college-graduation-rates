@@ -18,9 +18,10 @@
     display: inline-block;
     height: 34px;
     width: 34px;
+    margin: 0;
   }
   a {
-    margin: 0 0 0 31px;
+    margin-left: 1em;
     color: $body-color;
     font-size: 1.5em;
     font-weight: 100;

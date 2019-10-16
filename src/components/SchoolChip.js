@@ -18,7 +18,7 @@ export class SchoolChip extends React.Component {
           {desc && <p>{desc}</p>}
           { closeable ? (
             <div className="school-chip-close" onClick={onClose.bind(null, value)}>
-              <span className="btn btn-link pl-0" href="/">X <span className="text-muted font-italic">Close</span></span>
+              <span className="btn btn-link pl-0" href="/">X <span className="text-muted font-italic">Clear</span></span>
             </div>
           ):
             ''

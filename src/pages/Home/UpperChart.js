@@ -17,9 +17,11 @@ import DataContext from '../../modules/dataContext'
 import './UpperChart.scss'
 
 class UpperChart extends Component {
+  resizeHandle = null
 
   state = {
-    hoveredSchool: null
+    hoveredSchool: null,
+    margin: 150,
   }
 
   reorderSeries = (series) => {
@@ -55,6 +57,17 @@ class UpperChart extends Component {
     return schools.map((school)=>(school.value))
   }
 
+  setMargin = () => {
+    if (
+      document.body &&
+      document.body.clientWidth < 769
+    ) {
+      this.setState({margin: 85})
+    } else {
+      this.setState({margin: 150})
+    }
+  }
+
   renderLine = (col, i) => {
     const {hoveredSchool} = this.state
     const {schools} = this.context
@@ -75,9 +88,18 @@ class UpperChart extends Component {
     )
   }
 
+  componentDidMount() {
+    this.setMargin()
+    this.resizeHandle = window.addEventListener('resize', this.setMargin)
+  }
+
+  componentWillUnmount() {
+    window.addRemoveListener(this.resizeHandle)
+  }
+
   render() {
     const {graduation, data, schools} = this.context
-    const {hoveredSchool} = this.state
+    const {hoveredSchool, margin} = this.state
     const schoolArray = this.schoolArray(schools)
     // Place data into chart format
     let series = data.map((col) => ({
@@ -97,10 +119,19 @@ class UpperChart extends Component {
     return (
       <ResponsiveContainer className="upper-chart">
         <LineChart
-          margin={{left: 150}}
+          margin={{left: margin}}
         >
-          <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} />
-          <YAxis yAxisId="line" orientation="left" dataKey="score" domain={[0, 100]} interval="preserveStartEnd" ticks={[0, 100]} tickLine={false} unit="%"/>
+          <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} tickMargin={10} />
+          <YAxis
+            yAxisId="line"
+            dataKey="score"
+            domain={[0, 100]}
+            interval="preserveStartEnd"
+            orientation="left"
+            tickLine={false}
+            ticks={[0, 100]}
+            unit="%"
+          />
           <YAxis orientation="right" />
           {
             series.map(this.renderLine)

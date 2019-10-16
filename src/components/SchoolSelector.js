@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
-import Select from 'react-select'
-
+import Select, {components} from 'react-select'
 import DataContext from '../modules/dataContext'
 
 import './SchoolSelector.scss'
+
+const {ValueContainer, Placeholder} = components
+
 
 class SchoolSelector extends Component {
 
@@ -16,11 +18,26 @@ class SchoolSelector extends Component {
 
   render() {
     const {data, schools} = this.context
+    const CustomValueContainer = ({children, ...props}) => {
+      return (
+        <components.ValueContainer {...props}>
+          <Placeholder {...props} isFocused={props.isFocused}>
+            {(schools.length > 0) ? (schools.length + ' / 3') : props.selectProps.placeholder}
+          </Placeholder>
+          {React.Children.map(children, child => {
+            return child && child.type !== Placeholder ? child : null
+          })}
+        </components.ValueContainer>
+      )
+    }
     return (
       <Select
         className="basic-single mb-4"
         placeholder="Select up to 3 schools"
         classNamePrefix="select"
+        components={{
+          ValueContainer: CustomValueContainer
+        }}
         isClearable={true}
         isMulti={true}
         isSearchable={true}
@@ -28,6 +45,15 @@ class SchoolSelector extends Component {
         options={data.map((d)=>({label: d.name, value: d.name}))}
         onChange={this.handleChange}
         value={schools}
+        isDisabled={schools.length >= 3}
+        styles={{
+          placeholder: (provided, state) => ({
+            ...provided,
+            position: 'absolute',
+            right: state.hasValue || state.selectProps.inputValue ? '.75em' : 'auto',
+            fontSize: (state.hasValue || state.selectProps.inputValue) && '.75em'
+          })
+        }}
         theme={theme => ({
           ...theme,
           borderRadius: 0,

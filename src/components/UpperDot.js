@@ -22,6 +22,7 @@ class UpperDot extends PureComponent {
               textAnchor="end"
               dy={5}
               color="#353535"
+              scaleToFit={true}
             >{
               payload.schoolName.length > 16 ?
               payload.schoolName.substring(0, 16) + '...' :
