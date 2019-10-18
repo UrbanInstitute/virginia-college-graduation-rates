@@ -13,6 +13,9 @@ class SchoolSelector extends Component {
     const {schools, setSchool} = this.context
     // Limit the number of selectable schools to 3
     if (schools.length >= 3) return
+    // If someone presses backspace in an empty select box, it passes a null
+    // We should just ignore it
+    if (value === null) return
     setSchool(value)
   }
 
