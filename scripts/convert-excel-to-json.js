@@ -106,6 +106,31 @@ const schema = {
     type: Number,
     parse: parsePercentage,
   },
+  testscore_lowest_quintile: {
+    prop: 'testscore_lowest_quintile',
+    type: Number,
+    parse: parsePercentage,
+  },
+  testscore_2nd_quintile: {
+    prop: 'testscore_2nd_quintile',
+    type: Number,
+    parse: parsePercentage,
+  },
+  testscore_mid_quintile: {
+    prop: 'testscore_mid_quintile',
+    type: Number,
+    parse: parsePercentage,
+  },
+  testscore_4th_quintile: {
+    prop: 'testscore_4th_quintile',
+    type: Number,
+    parse: parsePercentage,
+  },
+  testscore_highest_quintile: {
+    prop: 'testscore_highest_quintile',
+    type: Number,
+    parse: parsePercentage,
+  },
   gpa_lowest_quintile: {
     prop: 'gpa_lowest_quintile',
     type: Number,
@@ -131,7 +156,16 @@ const schema = {
     type: Number,
     parse: parsePercentage,
   },
-
+  fulltime: {
+    prop: 'fulltime',
+    type: Number,
+    parse: parsePercentage,
+  },
+  parttime: {
+    prop: 'parttime',
+    type: Number,
+    parse: parsePercentage,
+  },
 }
 
 const getSheets = async function (path) {

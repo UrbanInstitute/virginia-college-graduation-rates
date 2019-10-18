@@ -1400,210 +1400,6 @@ const data =
     ]
   },
   '2yr': {
-    '4yr': [
-      {
-        'name': 'Blue Ridge Community College',
-        'grad_rate_4yr': 17,
-        'adj_4yr_grad_rate': 16,
-        'white': 18,
-        'male': 18,
-        'female': 17,
-        'nopell': 15,
-        'pell': 23
-      },
-      {
-        'name': 'Central Virginia Community College',
-        'grad_rate_4yr': 16,
-        'adj_4yr_grad_rate': 15,
-        'white': 18,
-        'male': 20,
-        'nopell': 21
-      },
-      {
-        'name': 'Dabney S. Lancaster Community College'
-      },
-      {
-        'name': 'Danville Community College',
-        'grad_rate_4yr': 19,
-        'adj_4yr_grad_rate': 20,
-        'pell': 13
-      },
-      {
-        'name': 'Eastern Shore Community College'
-      },
-      {
-        'name': 'Germanna Community College',
-        'grad_rate_4yr': 13,
-        'adj_4yr_grad_rate': 13,
-        'nopell': 13
-      },
-      {
-        'name': 'J Sargeant Reynolds Community College',
-        'grad_rate_4yr': 10,
-        'adj_4yr_grad_rate': 11,
-        'white': 12,
-        'black': 9,
-        'male': 10,
-        'female': 9,
-        'nopell': 12,
-        'pell': 7
-      },
-      {
-        'name': 'John Tyler Community College',
-        'grad_rate_4yr': 11,
-        'adj_4yr_grad_rate': 13,
-        'white': 20,
-        'black': 2,
-        'male': 16,
-        'female': 8,
-        'nopell': 15,
-        'pell': 7
-      },
-      {
-        'name': 'Lord Fairfax Community College',
-        'grad_rate_4yr': 10,
-        'adj_4yr_grad_rate': 10,
-        'white': 12,
-        'male': 9,
-        'nopell': 9
-      },
-      {
-        'name': 'Mountain Empire Community College',
-        'grad_rate_4yr': 15,
-        'adj_4yr_grad_rate': 14,
-        'white': 16,
-        'male': 16,
-        'female': 15,
-        'pell': 13
-      },
-      {
-        'name': 'New River Community College',
-        'grad_rate_4yr': 19,
-        'adj_4yr_grad_rate': 18,
-        'white': 21,
-        'male': 23,
-        'female': 13,
-        'nopell': 23,
-        'pell': 15
-      },
-      {
-        'name': 'Northern Virginia Community College',
-        'grad_rate_4yr': 8,
-        'adj_4yr_grad_rate': 9,
-        'white': 11,
-        'black': 6,
-        'hispanic': 5,
-        'asian': 9,
-        'otherrace': 3,
-        'male': 7,
-        'female': 11,
-        'nopell': 9,
-        'pell': 7
-      },
-      {
-        'name': 'Patrick Henry Community College',
-        'grad_rate_4yr': 26,
-        'adj_4yr_grad_rate': 25,
-        'male': 31
-      },
-      {
-        'name': 'Paul D Camp Community College'
-      },
-      {
-        'name': 'Piedmont Virginia Community College'
-      },
-      {
-        'name': 'Rappahannock Community College',
-        'grad_rate_4yr': 5,
-        'adj_4yr_grad_rate': 5,
-        'white': 4,
-        'female': 5,
-        'pell': 6
-      },
-      {
-        'name': 'Southside Virginia Community College',
-        'grad_rate_4yr': 12,
-        'adj_4yr_grad_rate': 14,
-        'white': 12,
-        'black': 12,
-        'male': 9,
-        'female': 16,
-        'pell': 14
-      },
-      {
-        'name': 'Southwest Virginia Community College',
-        'grad_rate_4yr': 25,
-        'adj_4yr_grad_rate': 22,
-        'white': 24,
-        'male': 16,
-        'pell': 26
-      },
-      {
-        'name': 'Thomas Nelson Community College',
-        'grad_rate_4yr': 9,
-        'adj_4yr_grad_rate': 9,
-        'white': 17,
-        'black': 0,
-        'male': 8,
-        'female': 10,
-        'nopell': 11,
-        'pell': 5
-      },
-      {
-        'name': 'Tidewater Community College',
-        'grad_rate_4yr': 7,
-        'adj_4yr_grad_rate': 8,
-        'white': 9,
-        'black': 5,
-        'hispanic': 6,
-        'asian': 10,
-        'male': 7,
-        'female': 7,
-        'nopell': 8,
-        'pell': 6
-      },
-      {
-        'name': 'Virginia Highlands Community College',
-        'grad_rate_4yr': 21,
-        'adj_4yr_grad_rate': 18,
-        'white': 21,
-        'male': 21,
-        'pell': 23
-      },
-      {
-        'name': 'Virginia Western Community College',
-        'grad_rate_4yr': 15,
-        'adj_4yr_grad_rate': 14,
-        'white': 16,
-        'black': 8,
-        'male': 16,
-        'female': 13,
-        'nopell': 14,
-        'pell': 16
-      },
-      {
-        'name': 'Wytheville Community College',
-        'grad_rate_4yr': 18,
-        'adj_4yr_grad_rate': 16,
-        'white': 19,
-        'male': 20,
-        'female': 18,
-        'nopell': 26,
-        'pell': 14
-      },
-      {
-        'name': 'State Average',
-        'white': 14,
-        'black': 6,
-        'hispanic': 7,
-        'asian': 9,
-        'otherrace': 8,
-        'male': 11,
-        'female': 11,
-        'nopell': 11,
-        'pell': 11
-      }
-    ],
     '6yr': [
       {
         'name': 'Blue Ridge Community College',
@@ -1613,7 +1409,8 @@ const data =
         'male': 28,
         'female': 17,
         'nopell': 18,
-        'pell': 32
+        'pell': 32,
+        'fulltime': 29
       },
       {
         'name': 'Central Virginia Community College',
@@ -1621,7 +1418,8 @@ const data =
         'adj_6yr_grad_rate': 26,
         'white': 30,
         'male': 27,
-        'nopell': 32
+        'nopell': 32,
+        'fulltime': 34
       },
       {
         'name': 'Dabney S. Lancaster Community College'
@@ -1630,7 +1428,8 @@ const data =
         'name': 'Danville Community College',
         'grad_rate_6yr': 26,
         'adj_6yr_grad_rate': 29,
-        'pell': 19
+        'pell': 19,
+        'fulltime': 28
       },
       {
         'name': 'Eastern Shore Community College'
@@ -1650,7 +1449,13 @@ const data =
         'male': 17,
         'female': 18,
         'nopell': 18,
-        'pell': 15
+        'pell': 15,
+        'testscore_lowest_quintile': 13,
+        'testscore_2nd_quintile': 7,
+        'testscore_mid_quintile': 27,
+        'testscore_highest_quintile': 29,
+        'fulltime': 21,
+        'parttime': 13
       },
       {
         'name': 'John Tyler Community College',
@@ -1661,7 +1466,9 @@ const data =
         'male': 22,
         'female': 14,
         'nopell': 20,
-        'pell': 15
+        'pell': 15,
+        'fulltime': 26,
+        'parttime': 3
       },
       {
         'name': 'Lord Fairfax Community College',
@@ -1669,7 +1476,8 @@ const data =
         'adj_6yr_grad_rate': 22,
         'white': 24,
         'male': 20,
-        'nopell': 19
+        'nopell': 19,
+        'fulltime': 30
       },
       {
         'name': 'Mountain Empire Community College',
@@ -1678,7 +1486,8 @@ const data =
         'white': 19,
         'male': 19,
         'female': 17,
-        'pell': 14
+        'pell': 14,
+        'fulltime': 21
       },
       {
         'name': 'New River Community College',
@@ -1688,7 +1497,8 @@ const data =
         'male': 34,
         'female': 22,
         'nopell': 34,
-        'pell': 24
+        'pell': 24,
+        'fulltime': 34
       },
       {
         'name': 'Northern Virginia Community College',
@@ -1702,13 +1512,21 @@ const data =
         'male': 20,
         'female': 27,
         'nopell': 22,
-        'pell': 25
+        'pell': 25,
+        'testscore_lowest_quintile': 13,
+        'testscore_2nd_quintile': 22,
+        'testscore_mid_quintile': 22,
+        'testscore_4th_quintile': 27,
+        'testscore_highest_quintile': 28,
+        'fulltime': 28,
+        'parttime': 11
       },
       {
         'name': 'Patrick Henry Community College',
         'grad_rate_6yr': 33,
         'adj_6yr_grad_rate': 34,
-        'male': 38
+        'male': 38,
+        'fulltime': 39
       },
       {
         'name': 'Paul D Camp Community College'
@@ -1722,7 +1540,8 @@ const data =
         'adj_6yr_grad_rate': 14,
         'white': 15,
         'female': 16,
-        'pell': 14
+        'pell': 14,
+        'fulltime': 11
       },
       {
         'name': 'Southside Virginia Community College',
@@ -1732,7 +1551,8 @@ const data =
         'black': 18,
         'male': 15,
         'female': 19,
-        'pell': 18
+        'pell': 18,
+        'fulltime': 21
       },
       {
         'name': 'Southwest Virginia Community College',
@@ -1740,7 +1560,8 @@ const data =
         'adj_6yr_grad_rate': 22,
         'white': 26,
         'male': 18,
-        'pell': 26
+        'pell': 26,
+        'fulltime': 27
       },
       {
         'name': 'Thomas Nelson Community College',
@@ -1751,7 +1572,14 @@ const data =
         'male': 15,
         'female': 18,
         'nopell': 23,
-        'pell': 8
+        'pell': 8,
+        'testscore_lowest_quintile': 6,
+        'testscore_2nd_quintile': 10,
+        'testscore_mid_quintile': 16,
+        'testscore_4th_quintile': 35,
+        'testscore_highest_quintile': 21,
+        'fulltime': 24,
+        'parttime': 3
       },
       {
         'name': 'Tidewater Community College',
@@ -1764,7 +1592,14 @@ const data =
         'male': 16,
         'female': 17,
         'nopell': 19,
-        'pell': 14
+        'pell': 14,
+        'testscore_lowest_quintile': 11,
+        'testscore_2nd_quintile': 14,
+        'testscore_mid_quintile': 12,
+        'testscore_4th_quintile': 17,
+        'testscore_highest_quintile': 29,
+        'fulltime': 18,
+        'parttime': 11
       },
       {
         'name': 'Virginia Highlands Community College',
@@ -1772,7 +1607,8 @@ const data =
         'adj_6yr_grad_rate': 25,
         'white': 29,
         'male': 26,
-        'pell': 26
+        'pell': 26,
+        'fulltime': 32
       },
       {
         'name': 'Virginia Western Community College',
@@ -1783,7 +1619,13 @@ const data =
         'male': 23,
         'female': 19,
         'nopell': 24,
-        'pell': 19
+        'pell': 19,
+        'testscore_lowest_quintile': 7,
+        'testscore_mid_quintile': 23,
+        'testscore_4th_quintile': 31,
+        'testscore_highest_quintile': 30,
+        'fulltime': 27,
+        'parttime': 5
       },
       {
         'name': 'Wytheville Community College',
@@ -1793,7 +1635,9 @@ const data =
         'male': 26,
         'female': 27,
         'nopell': 40,
-        'pell': 18
+        'pell': 18,
+        'testscore_2nd_quintile': 17,
+        'fulltime': 28
       },
       {
         'name': 'State Average',
@@ -1805,7 +1649,273 @@ const data =
         'male': 20,
         'female': 22,
         'nopell': 23,
-        'pell': 18
+        'pell': 18,
+        'testscore_lowest_quintile': 11,
+        'testscore_2nd_quintile': 17,
+        'testscore_mid_quintile': 19,
+        'testscore_4th_quintile': 26,
+        'testscore_highest_quintile': 31,
+        'fulltime': 25,
+        'parttime': 10
+      }
+    ],
+    '4yr': [
+      {
+        'name': 'Blue Ridge Community College',
+        'grad_rate_4yr': 17,
+        'adj_4yr_grad_rate': 16,
+        'white': 18,
+        'male': 18,
+        'female': 17,
+        'nopell': 15,
+        'pell': 23,
+        'fulltime': 23
+      },
+      {
+        'name': 'Central Virginia Community College',
+        'grad_rate_4yr': 16,
+        'adj_4yr_grad_rate': 15,
+        'white': 18,
+        'male': 20,
+        'nopell': 21,
+        'fulltime': 22
+      },
+      {
+        'name': 'Dabney S. Lancaster Community College'
+      },
+      {
+        'name': 'Danville Community College',
+        'grad_rate_4yr': 19,
+        'adj_4yr_grad_rate': 20,
+        'pell': 13,
+        'fulltime': 22
+      },
+      {
+        'name': 'Eastern Shore Community College'
+      },
+      {
+        'name': 'Germanna Community College',
+        'grad_rate_4yr': 13,
+        'adj_4yr_grad_rate': 13,
+        'nopell': 13
+      },
+      {
+        'name': 'J Sargeant Reynolds Community College',
+        'grad_rate_4yr': 10,
+        'adj_4yr_grad_rate': 11,
+        'white': 12,
+        'black': 9,
+        'male': 10,
+        'female': 9,
+        'nopell': 12,
+        'pell': 7,
+        'testscore_lowest_quintile': 5,
+        'testscore_2nd_quintile': 4,
+        'testscore_mid_quintile': 16,
+        'testscore_highest_quintile': 19,
+        'fulltime': 13,
+        'parttime': 6
+      },
+      {
+        'name': 'John Tyler Community College',
+        'grad_rate_4yr': 11,
+        'adj_4yr_grad_rate': 13,
+        'white': 20,
+        'black': 2,
+        'male': 16,
+        'female': 8,
+        'nopell': 15,
+        'pell': 7,
+        'fulltime': 16,
+        'parttime': 3
+      },
+      {
+        'name': 'Lord Fairfax Community College',
+        'grad_rate_4yr': 10,
+        'adj_4yr_grad_rate': 10,
+        'white': 12,
+        'male': 9,
+        'nopell': 9,
+        'fulltime': 15
+      },
+      {
+        'name': 'Mountain Empire Community College',
+        'grad_rate_4yr': 15,
+        'adj_4yr_grad_rate': 14,
+        'white': 16,
+        'male': 16,
+        'female': 15,
+        'pell': 13,
+        'fulltime': 18
+      },
+      {
+        'name': 'New River Community College',
+        'grad_rate_4yr': 19,
+        'adj_4yr_grad_rate': 18,
+        'white': 21,
+        'male': 23,
+        'female': 13,
+        'nopell': 23,
+        'pell': 15,
+        'fulltime': 21
+      },
+      {
+        'name': 'Northern Virginia Community College',
+        'grad_rate_4yr': 8,
+        'adj_4yr_grad_rate': 9,
+        'white': 11,
+        'black': 6,
+        'hispanic': 5,
+        'asian': 9,
+        'otherrace': 3,
+        'male': 7,
+        'female': 11,
+        'nopell': 9,
+        'pell': 7,
+        'testscore_lowest_quintile': 2,
+        'testscore_2nd_quintile': 7,
+        'testscore_mid_quintile': 8,
+        'testscore_4th_quintile': 11,
+        'testscore_highest_quintile': 13,
+        'fulltime': 11,
+        'parttime': 4
+      },
+      {
+        'name': 'Patrick Henry Community College',
+        'grad_rate_4yr': 26,
+        'adj_4yr_grad_rate': 25,
+        'male': 31,
+        'fulltime': 29
+      },
+      {
+        'name': 'Paul D Camp Community College'
+      },
+      {
+        'name': 'Piedmont Virginia Community College'
+      },
+      {
+        'name': 'Rappahannock Community College',
+        'grad_rate_4yr': 5,
+        'adj_4yr_grad_rate': 5,
+        'white': 4,
+        'female': 5,
+        'pell': 6,
+        'fulltime': 5
+      },
+      {
+        'name': 'Southside Virginia Community College',
+        'grad_rate_4yr': 12,
+        'adj_4yr_grad_rate': 14,
+        'white': 12,
+        'black': 12,
+        'male': 9,
+        'female': 16,
+        'pell': 14,
+        'fulltime': 16
+      },
+      {
+        'name': 'Southwest Virginia Community College',
+        'grad_rate_4yr': 25,
+        'adj_4yr_grad_rate': 22,
+        'white': 24,
+        'male': 16,
+        'pell': 26,
+        'fulltime': 27
+      },
+      {
+        'name': 'Thomas Nelson Community College',
+        'grad_rate_4yr': 9,
+        'adj_4yr_grad_rate': 9,
+        'white': 17,
+        'black': 0,
+        'male': 8,
+        'female': 10,
+        'nopell': 11,
+        'pell': 5,
+        'testscore_lowest_quintile': 0,
+        'testscore_2nd_quintile': 5,
+        'testscore_mid_quintile': 13,
+        'testscore_4th_quintile': 22,
+        'testscore_highest_quintile': 8,
+        'fulltime': 13,
+        'parttime': 1
+      },
+      {
+        'name': 'Tidewater Community College',
+        'grad_rate_4yr': 7,
+        'adj_4yr_grad_rate': 8,
+        'white': 9,
+        'black': 5,
+        'hispanic': 6,
+        'asian': 10,
+        'male': 7,
+        'female': 7,
+        'nopell': 8,
+        'pell': 6,
+        'testscore_lowest_quintile': 4,
+        'testscore_2nd_quintile': 6,
+        'testscore_mid_quintile': 6,
+        'testscore_4th_quintile': 6,
+        'testscore_highest_quintile': 15,
+        'fulltime': 9,
+        'parttime': 4
+      },
+      {
+        'name': 'Virginia Highlands Community College',
+        'grad_rate_4yr': 21,
+        'adj_4yr_grad_rate': 18,
+        'white': 21,
+        'male': 21,
+        'pell': 23,
+        'fulltime': 23
+      },
+      {
+        'name': 'Virginia Western Community College',
+        'grad_rate_4yr': 15,
+        'adj_4yr_grad_rate': 14,
+        'white': 16,
+        'black': 8,
+        'male': 16,
+        'female': 13,
+        'nopell': 14,
+        'pell': 16,
+        'testscore_lowest_quintile': 0,
+        'testscore_mid_quintile': 10,
+        'testscore_4th_quintile': 23,
+        'testscore_highest_quintile': 28,
+        'fulltime': 19,
+        'parttime': 5
+      },
+      {
+        'name': 'Wytheville Community College',
+        'grad_rate_4yr': 18,
+        'adj_4yr_grad_rate': 16,
+        'white': 19,
+        'male': 20,
+        'female': 18,
+        'nopell': 26,
+        'pell': 14,
+        'testscore_2nd_quintile': 10,
+        'fulltime': 19
+      },
+      {
+        'name': 'State Average',
+        'white': 14,
+        'black': 6,
+        'hispanic': 7,
+        'asian': 9,
+        'otherrace': 8,
+        'male': 11,
+        'female': 11,
+        'nopell': 11,
+        'pell': 11,
+        'testscore_lowest_quintile': 4,
+        'testscore_2nd_quintile': 9,
+        'testscore_mid_quintile': 10,
+        'testscore_4th_quintile': 14,
+        'testscore_highest_quintile': 18,
+        'fulltime': 14,
+        'parttime': 5
       }
     ]
   }

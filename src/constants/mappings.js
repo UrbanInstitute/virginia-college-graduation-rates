@@ -23,6 +23,15 @@ export const TAB_MAPPING = {
       testscore_highest_quintile: 'Highest Quintile',
     },
   },
+  'TIME COMMITTMENT': {
+    institution: '2yr',
+    heading: 'How do school graduation rates compare to state averages for full and part time?',
+    subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    items: {
+      'fulltime': 'Full time',
+      'parttime': 'Part time'
+    },
+  },
   'HS GPA': {
     institution: '4yr',
     heading: 'How do school graduation rates compare to state averages for high school GPA?',
@@ -39,10 +48,10 @@ export const TAB_MAPPING = {
     heading: 'How do school graduation rates compare to state averages for race?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      white: 'White',
+      asian: 'Asian',
       black: 'Black',
       hispanic: 'Hispanic',
-      asian: 'Asian',
+      white: 'White',
       otherrace: 'Other',
     },
   },
@@ -50,16 +59,16 @@ export const TAB_MAPPING = {
     heading: 'How do school graduation rates compare to state averages for gender?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      male: 'Male',
       female: 'Female',
+      male: 'Male',
     },
   },
   'PELL STATUS': {
     heading: 'How do school graduation rates compare to state averages for PELL awards?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      nopell: 'No PELL',
-      pell: 'PELL',
+      nopell: 'Not a Pell recipient',
+      pell: 'Pell recipient',
     },
   },
 }
