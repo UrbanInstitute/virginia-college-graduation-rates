@@ -20,16 +20,12 @@ class LowerChart extends Component {
         averageData = col
       }
     })
-    let allValues = flatMap(data, (col) => (schoolArray.includes(col['name']) ? getTabData(col, itemKeys) : null)).filter((n)=>(n))
-    // We still want to show averages if we have no school data
-    // This sets the chart min and max to 0, 100
-    if (allValues.length === 0) {
-      allValues = [0, 100]
-    }
+    let allValues = flatMap(data, (col) => (schoolArray.includes(col['name']) || col['name'] === 'State Average' ? getTabData(col, itemKeys) : null)).filter((n)=>(n))
     const max = Math.max(...allValues)
     const min = Math.min(...allValues)
     // Create an array of numbers from our min to max
-    const categories = range(min, max, 1)
+    // We have to add an extra element to ensure it includes our max
+    const categories = range(min, max + 1, 1)
     return map(items, (label, metric) => {
       return (
         <div style={{minHeight: '50px', marginBottom: '2em'}} key={metric}>
