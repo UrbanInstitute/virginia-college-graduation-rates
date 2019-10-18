@@ -10,9 +10,9 @@ import data from '../constants/data'
 
 function Home() {
   const [institution, setInstitution] = useState('4yr')
-  const [graduation, setGraduation] = useState('4yr')
+  const [graduation, setGraduation] = useState('6yr')
   const [schools, setSchool] = useState([])
-  const selectedData = data[institution] ? data[institution][graduation] : data['4yr']['4yr']
+  const selectedData = data[institution] ? data[institution][graduation] : data['4yr']['6yr']
   return (
     <div className="container">
       <DataProvider
