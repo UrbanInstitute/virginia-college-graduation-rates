@@ -7,7 +7,7 @@
 }
 
 .nav-pills{
-  display: block;  
+  display: block;
   .nav-link {
     background-color: $light-blue;
     flex: 1 1 0px;
@@ -18,6 +18,7 @@
     text-transform: uppercase;
     padding: 1.25rem .5rem 1.25rem .125rem;
     text-align: center;
+    font-weight: 600;
     &.active {
       position: relative;
       background-color: $active-tab;
