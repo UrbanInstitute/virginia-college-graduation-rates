@@ -7,11 +7,10 @@
   flex-wrap: nowrap;
   margin-bottom: 1.5em;
   .school-chip-icon {
-    height: 1em;
-    width: 1em;
+    height: $dot-size;
     border-radius: 100%;
     background-color: $light-grey;
-    flex: 0 0 1em;
+    flex: 0 0 $dot-size;
     margin-right: .75em;
   }
   .school-chip-details {
