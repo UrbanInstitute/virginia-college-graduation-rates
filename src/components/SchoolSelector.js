@@ -34,9 +34,9 @@ class SchoolSelector extends Component {
       )
     }
     return (
-      <React.Fragment>
+      <div className="mt-3 clearfix mb-2">
         <Select
-          className="basic-single mt-3 mb-2"
+          className="basic-single mb-1"
           placeholder="Select up to 3 schools"
           classNamePrefix="select"
           components={{
@@ -74,7 +74,7 @@ class SchoolSelector extends Component {
         :
           ''
         }
-      </React.Fragment>
+      </div>
     )
   }
 
