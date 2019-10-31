@@ -34,38 +34,47 @@ class SchoolSelector extends Component {
       )
     }
     return (
-      <Select
-        className="basic-single my-3"
-        placeholder="Select up to 3 schools"
-        classNamePrefix="select"
-        components={{
-          ValueContainer: CustomValueContainer
-        }}
-        isClearable={true}
-        isMulti={true}
-        isSearchable={true}
-        name="color"
-        options={generateOptions(data)}
-        onChange={this.handleChange}
-        value={schools}
-        isDisabled={schools.length >= 3}
-        styles={{
-          placeholder: (provided, state) => ({
-            ...provided,
-            position: 'absolute',
-            right: state.hasValue || state.selectProps.inputValue ? '.75em' : 'auto',
-            fontSize: (state.hasValue || state.selectProps.inputValue) && '.75em'
-          })
-        }}
-        theme={theme => ({
-          ...theme,
-          borderRadius: 0,
-          colors: {
-            ...theme.colors,
-            primary: '#3b96d3',
-          },
-        })}
-      />
+      <React.Fragment>
+        <Select
+          className="basic-single mt-3 mb-2"
+          placeholder="Select up to 3 schools"
+          classNamePrefix="select"
+          components={{
+            ValueContainer: CustomValueContainer
+          }}
+          isClearable={true}
+          isMulti={true}
+          isSearchable={true}
+          name="color"
+          options={generateOptions(data)}
+          onChange={this.handleChange}
+          value={schools}
+          isDisabled={schools.length >= 3}
+          styles={{
+            placeholder: (provided, state) => ({
+              ...provided,
+              position: 'absolute',
+              right: state.hasValue || state.selectProps.inputValue ? '.75em' : 'auto',
+              fontSize: (state.hasValue || state.selectProps.inputValue) && '.75em'
+            })
+          }}
+          theme={theme => ({
+            ...theme,
+            borderRadius: 0,
+            colors: {
+              ...theme.colors,
+              primary: '#3b96d3',
+            },
+          })}
+        />
+        { (schools.length >= 1) ?
+          <div className="school-chip-close float-right">
+            X <span className="school-chip-close-text"> Clear all</span>
+          </div>
+        :
+          ''
+        }
+      </React.Fragment>
     )
   }
 
