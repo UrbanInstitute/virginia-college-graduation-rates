@@ -14,7 +14,7 @@ const Notebook = ({selectedTab}) => {
     <div className="card" style={{minHeight:700}}>
       <div className="card-body">
         <div className="intro-text">
-          <small className="text-uppercase text-primary">{institution === '4yr' ? '4' : '2'}-Year Schools</small>
+          <small className="text-uppercase text-primary" style={{fontSize:'1rem'}}>{institution === '4yr' ? '4' : '2'}-Year Schools</small>
           <h3>{TAB_MAPPING[selectedTab]['heading']}</h3>
           <p>{TAB_MAPPING[selectedTab]['subheading']}</p>
         </div>
