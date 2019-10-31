@@ -5,6 +5,7 @@ import {DataProvider} from '../modules/dataContext'
 import Header from './Home/Header'
 import UpperSection from './Home/UpperSection'
 import LowerSection from './Home/LowerSection'
+import Footer from './Home/Footer'
 
 import data from '../constants/data'
 
@@ -30,6 +31,7 @@ function Home() {
         <UpperSection />
         <LowerSection />
       </DataProvider>
+      <Footer/>
     </div>
   )
 }
