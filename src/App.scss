@@ -17,13 +17,12 @@ html{
 .entry {
   display: flex;
   flex-wrap: nowrap;
-  align-items: baseline;
-  align-items: first-baseline;
   .entry-number {
     @extend .display-5;
     color: $primary;
     margin-right: .5em;
     font-weight: bold;
+    margin-top: -.66rem;
   }
 }
 
