@@ -1,5 +1,31 @@
 @import '../variables';
 
+.school-chip {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin-bottom: 1.5em;
+  .school-chip-icon {
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    background-color: $light-grey;
+    flex: 0 0 1em;
+    margin-right: .75em;
+  }
+  .school-chip-details {
+    p {
+      font-style: italic;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
 .school-chip-close {
   color: $primary;
   font-weight: 900;
