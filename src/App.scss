@@ -20,8 +20,8 @@ html{
   .entry-number {
     @extend .display-5;
     color: $primary;
-    margin-right: .5em;
     font-weight: bold;
+    margin-right: .5em;
     margin-top: -.66rem;
   }
 }

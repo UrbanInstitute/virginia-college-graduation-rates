@@ -35,7 +35,7 @@ class SchoolSelector extends Component {
     }
     return (
       <Select
-        className="basic-single mb-4"
+        className="basic-single my-3"
         placeholder="Select up to 3 schools"
         classNamePrefix="select"
         components={{
