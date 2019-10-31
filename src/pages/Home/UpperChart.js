@@ -83,7 +83,11 @@ class UpperChart extends Component {
         key={i}
         connectNulls={true}
         animationDuration={500}
-        dot={<UpperDot stroke={col.color} fill={col.color} r={schoolArray.includes(col.label) ? 7 : 5} />}
+        dot={{
+          stroke: col.color,
+          fill: col.color,
+          r: schoolArray.includes(col.label) ? 7 : 5,
+        }}
       />
     )
   }
