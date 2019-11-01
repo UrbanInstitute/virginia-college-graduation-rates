@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './SchoolChip.scss'
+
 export class SchoolChip extends React.Component {
   render(){
     const {
@@ -18,7 +20,7 @@ export class SchoolChip extends React.Component {
           {desc && <p>{desc}</p>}
           { closeable ? (
             <div className="school-chip-close" onClick={onClose.bind(null, value)}>
-              <span className="btn btn-link pl-0" href="/">X <span className="text-muted font-italic">Clear</span></span>
+              X <span className="school-chip-close-text"> Clear</span>
             </div>
           ):
             ''

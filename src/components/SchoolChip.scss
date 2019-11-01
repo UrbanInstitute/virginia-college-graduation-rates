@@ -1,0 +1,47 @@
+@import '../variables';
+
+.school-chip {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin-bottom: 1.5em;
+  .school-chip-icon {
+    height: $dot-size;
+    border-radius: 100%;
+    background-color: $light-grey;
+    flex: 0 0 $dot-size;
+    margin-right: .75em;
+  }
+  .school-chip-details {
+    p {
+      font-style: italic;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.school-chip-close {
+  color: $primary;
+  font-weight: 900;
+  -webkit-text-stroke: 1px $primary;
+  .school-chip-close-text {
+    color: $light-grey;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-text-stroke: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 1px $primary;
+    .school-chip-close-text {
+      color: $primary;
+      font-weight: 900;
+      -webkit-text-stroke: 1px $primary;
+    }
+  }
+}

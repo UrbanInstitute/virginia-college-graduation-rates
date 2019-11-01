@@ -82,8 +82,12 @@ class UpperChart extends Component {
         strokeWidth={col.label === hoveredSchool ? 3 : 1}
         key={i}
         connectNulls={true}
-        animationDuration={500}
-        dot={<UpperDot stroke={col.color} fill={col.color} r={schoolArray.includes(col.label) ? 7 : 5} />}
+        isAnimationActive={false}
+        dot={{
+          stroke: col.color,
+          fill: col.color,
+          r: schoolArray.includes(col.label) ? 7 : 5,
+        }}
       />
     )
   }
