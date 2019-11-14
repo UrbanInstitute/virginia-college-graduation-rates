@@ -4,6 +4,8 @@ import ReactTooltip from 'react-tooltip'
 
 import DataContext from '../../modules/dataContext'
 
+import './RadioSection.scss'
+
 const groups = {
   institution: {
     number: 1,
@@ -72,7 +74,7 @@ class RadioSection extends Component {
             </h2>
             {
               group.radios.map((radio) => (
-                <div key={radio.value} className="form-check my-3">
+                <div key={radio.value} className="form-check custom-radio my-3">
                   <input
                     className="form-check-input"
                     type="radio"
