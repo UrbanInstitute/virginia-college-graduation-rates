@@ -11,7 +11,7 @@ import SchoolChips from './SchoolChips'
 const Notebook = ({selectedTab}) => {
   const {institution} = useContext(DataContext)
   return (
-    <div className="card" style={{minHeight:700}}>
+    <div className="card" style={{minHeight:750}}>
       <div className="card-body">
         <div className="intro-text">
           <small className="text-uppercase text-primary" style={{fontSize:'1rem'}}>{institution === '4yr' ? '4' : '2'}-Year Schools</small>

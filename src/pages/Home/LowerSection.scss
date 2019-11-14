@@ -9,6 +9,10 @@
 .nav-pills{
   display: block;
   .nav-link {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
     background-color: $light-blue;
     flex: 1 1 0px;
     margin: .5em 0;
