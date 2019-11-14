@@ -8,8 +8,6 @@ import {
 } from 'recharts'
 import {cloneDeep} from 'lodash'
 
-import UpperDot from '../../components/UpperDot'
-
 import {getSchoolColor} from '../../lib/colors'
 import {arrayMoveInPlace} from '../../lib/array'
 import DataContext from '../../modules/dataContext'

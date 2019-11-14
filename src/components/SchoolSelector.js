@@ -25,7 +25,7 @@ class SchoolSelector extends Component {
   handleChange = (value) => {
     const {schools, setSchool} = this.context
     // Limit the number of selectable schools to 3
-    if (schools.length >= 3) return
+    if (schools.length >= 3 && value.length !== 0) return
     // If someone presses backspace in an empty select box, it passes a null
     // We should just ignore it
     if (value === null) return
@@ -82,7 +82,7 @@ class SchoolSelector extends Component {
           })}
         />
         { (schools.length >= 1) ?
-          <div className="school-chip-close float-right">
+          <div className="school-chip-close float-right" onClick={this.handleChange.bind(null, [])}>
             X <span className="school-chip-close-text"> Clear all</span>
           </div>
         :
