@@ -51,7 +51,7 @@ class ComparisonChart extends Component {
     return (
       <ResponsiveContainer className="comparison-chart">
         <LineChart
-          margin={{left: 50, right: 50, top: 20}}
+          margin={{left: 50, right: 55, top: 20}}
         >
           <Line
             yAxisId="line"
