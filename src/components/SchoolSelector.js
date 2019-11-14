@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, type ElementConfig} from 'react'
 import Select, {components} from 'react-select'
 import DataContext from '../modules/dataContext'
 
@@ -6,6 +6,19 @@ import './SchoolSelector.scss'
 
 // Components from react select that we want to customize
 const {ValueContainer, Placeholder} = components
+
+const DropdownIndicator = (
+  props: ElementConfig<typeof components.DropdownIndicator>
+) => {
+  return (
+    <components.DropdownIndicator {...props}>
+      <svg style={{marginLeft: '.2rem', marginRight: '.25rem'}} width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.852 8.148H7.292V13.008H4.604V8.148H0.068V5.736H4.604V0.888H7.292V5.736H11.852V8.148Z" fill="#12719E"/>
+      </svg>
+    </components.DropdownIndicator>
+  )
+}
+
 
 class SchoolSelector extends Component {
 
@@ -40,7 +53,8 @@ class SchoolSelector extends Component {
           placeholder="Select up to 3 schools"
           classNamePrefix="select"
           components={{
-            ValueContainer: CustomValueContainer
+            ValueContainer: CustomValueContainer,
+            DropdownIndicator: DropdownIndicator
           }}
           isClearable={true}
           isMulti={true}
