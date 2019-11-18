@@ -29,11 +29,13 @@ class LowerSection extends Component  {
   }
 
   tabItems = () => {
-    const selectedTab = this.state.selectedTab || this.tabs()[0]
+    const {selectedTab} = this.state
+    const tabs = this.tabs()
+    const sTab = tabs.includes(selectedTab) ?  selectedTab : this.tabs()[0]
     return this.tabs().map((tab, i) =>
       <span
         key={i}
-        className={`nav-link vertical-text ${selectedTab === tab ? 'active' : ''}`}
+        className={`nav-link vertical-text ${sTab === tab ? 'active' : ''}`}
         data-toggle="pill"
         role="tab"
         onClick={this.changeTab.bind(null, tab)}
