@@ -100,7 +100,7 @@ class UpperChart extends Component {
   }
 
   render() {
-    const {graduation, data, schools} = this.context
+    const {graduation, institution, data, schools} = this.context
     const {hoveredSchool, margin} = this.state
     const schoolArray = this.schoolArray(schools)
     // Place data into chart format
@@ -118,6 +118,7 @@ class UpperChart extends Component {
     }))
     // Move our schools to end of array so they are on top of chart
     series = this.reorderSeries(series)
+    const [min, max] = getMinMaxValuesFromSeries(series)
     return (
       <ResponsiveContainer className="upper-chart">
         <LineChart
@@ -127,11 +128,11 @@ class UpperChart extends Component {
           <YAxis
             yAxisId="line"
             dataKey="score"
-            domain={[0, 100]}
+            domain={[min, institution === '2yr' ? max : 100]}
             interval="preserveStartEnd"
             orientation="left"
             tickLine={false}
-            ticks={[0, 100]}
+            ticks={[min, institution === '2yr' ? max : 100]}
             unit="%"
           />
           <YAxis orientation="right" />
@@ -147,3 +148,17 @@ class UpperChart extends Component {
 UpperChart.contextType = DataContext
 
 export default UpperChart
+
+function getMinMaxValuesFromSeries(series){
+  const allValues = series
+    .map((s)=>([s.data[0].score, s.data[1].score]))
+    .flat()
+    .filter((s)=>(s))
+  const min = Math.min(...allValues)
+  const max = Math.max(...allValues)
+  console.log(min, max)
+  return [
+    min - 5,
+    max + 5,
+  ]
+}
