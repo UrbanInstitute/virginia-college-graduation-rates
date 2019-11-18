@@ -1,8 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# College Metrics Dashboard
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It provides an easy way to spin up a react front end.
+
+## Development
+
+1. You need to have node 12.10 or later installed
+1. Install dependencies with `yarn` or `npm install`
+1. Run start with `npm start` or `yarn start`
+
+## Deployment
+
+By default, the app builds to run from the root of a server. To change this you will want to add the homepage property to the package.json:
+
+`"homepage": "http://mywebsite.com/relativepath",`
+
+Then run `npm run build`.
+
+Everything in the build directory can be copied into the directory on the server you would like to serve the app from.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `node ./scripts/convert-excel-to-json.js`
+
+This script is used to update the data in constants/data.js from the research spreadsheet. The spreadhsheet file should be named data.xlsx.
+
+If you need to add new parameters in the future, you will need to update the schema variable with the new parameters for it to grab them out of the sheet.
+
+If you have problems running the script, check to make sure the page names still match the sheetname strings in the switch statement.
 
 ### `npm start`
 
@@ -11,11 +37,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -26,43 +47,3 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
