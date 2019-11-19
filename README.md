@@ -14,6 +14,8 @@ By default, the app builds to run from the root of a server. To change this you 
 
 `"homepage": "http://mywebsite.com/relativepath",`
 
+To enable Google Analytics you should create a .env file in the root of the project with `REACT_APP_GA_ID=` as a variable. This will replace it everywhere it should in the index.html
+
 Then run `npm run build`.
 
 Everything in the build directory can be copied into the directory on the server you would like to serve the app from.

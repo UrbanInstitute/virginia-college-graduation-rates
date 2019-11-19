@@ -156,7 +156,6 @@ function getMinMaxValuesFromSeries(series){
     .filter((s)=>(s))
   const min = Math.min(...allValues)
   const max = Math.max(...allValues)
-  console.log(min, max)
   return [
     min - 5,
     max + 5,
