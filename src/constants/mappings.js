@@ -4,11 +4,11 @@ export const TAB_MAPPING = {
     heading: 'How do school graduation rates compare to state averages for SAT scores?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      sat_lowest_quintile: 'Lowest Quintile',
-      sat_2nd_quintile: '2nd Quintile',
-      sat_mid_quintile: 'Mid Quintile',
-      sat_4th_quintile: '4th Quintile',
-      sat_highest_quintile: 'Highest Quintile',
+      sat_lowest_quintile: 'SAT scores, lowest group',
+      sat_2nd_quintile: 'SAT scores, second-lowest group',
+      sat_mid_quintile: 'SAT scores, middle group',
+      sat_4th_quintile: 'SAT scores, second-highest group',
+      sat_highest_quintile: 'SAT scores, highest group',
     },
   },
   'TEST SCORE': {
@@ -16,11 +16,11 @@ export const TAB_MAPPING = {
     heading: 'How do school graduation rates compare to state averages for test scores?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      testscore_lowest_quintile: 'Lowest Quintile',
-      testscore_2nd_quintile: '2nd Quintile',
-      testscore_mid_quintile: 'Mid Quintile',
-      testscore_4th_quintile: '4th Quintile',
-      testscore_highest_quintile: 'Highest Quintile',
+      testscore_lowest_quintile: 'Test scores, lowest group',
+      testscore_2nd_quintile: 'Test scores, second-lowest group',
+      testscore_mid_quintile: 'Test scores, middle group',
+      testscore_4th_quintile: 'Test scores, second-highest group',
+      testscore_highest_quintile: 'Test scores, highest group',
     },
   },
   'TIME COMMITTMENT': {
@@ -37,11 +37,11 @@ export const TAB_MAPPING = {
     heading: 'How do school graduation rates compare to state averages for high school GPA?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      gpa_lowest_quintile: 'Lowest Quintile',
-      gpa_2nd_quintile: '2nd Quintile',
-      gpa_mid_quintile: 'Mid Quintile',
-      gpa_4th_quintile: '4th Quintile',
-      gpa_highest_quintile: 'Highest Quintile',
+      gpa_lowest_quintile: 'GPA, lowest group',
+      gpa_2nd_quintile: 'GPA, second-lowest group',
+      gpa_mid_quintile: 'GPA, middle group',
+      gpa_4th_quintile: 'GPA, second-highest group',
+      gpa_highest_quintile: 'GPA, highest group',
     },
   },
   'RACE': {
@@ -52,23 +52,23 @@ export const TAB_MAPPING = {
       black: 'Black',
       hispanic: 'Hispanic',
       white: 'White',
-      otherrace: 'Other',
+      otherrace: 'Other race or ethnicity',
     },
   },
   'GENDER': {
     heading: 'How do school graduation rates compare to state averages for gender?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      female: 'Female',
-      male: 'Male',
+      male: 'Men',
+      female: 'Women',
     },
   },
   'PELL STATUS': {
     heading: 'How do school graduation rates compare to state averages for PELL awards?',
     subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     items: {
-      nopell: 'Not a Pell recipient',
       pell: 'Pell recipient',
+      nopell: 'Not a Pell recipient',
     },
   },
 }
