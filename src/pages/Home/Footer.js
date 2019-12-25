@@ -37,7 +37,7 @@ class Footer extends Component  {
             <h3 className="text-uppercase">Writing</h3>
             <p>Serena Lei</p>
 
-            <a className="github-link" href="https://github.com/UrbanInstitute/pell-simulator" rel="noopener noreferrer" target="_blank">View this project on GitHub</a>
+            <a className="github-link" href="https://github.com/UI-Research/college-metrics-dashboard" rel="noopener noreferrer" target="_blank">View this project on GitHub</a>
           </footer>
         </div>
       </React.Fragment>
