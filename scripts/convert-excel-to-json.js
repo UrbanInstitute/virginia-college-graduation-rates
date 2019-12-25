@@ -12,10 +12,6 @@ const schema = {
     prop: 'name',
     type: String,
   },
-  description: {
-    prop: 'description',
-    type: String,
-  },
   grad_rate_4yr: {
     prop: 'grad_rate_4yr',
     type: Number,
@@ -172,7 +168,7 @@ const getSheets = async function (path) {
   return await readXlsxFile(path, {getSheets: true})
 }
 
-const getObjectFromSheet = async function (path, sheet) {
+const getObjectFromSheet = async function (path, sheet, schema) {
   return await readXlsxFile(path, {sheet, schema})
 }
 
@@ -189,36 +185,92 @@ const finalObj = {
   '2yr': {},
 }
 
+const addData = (institution, graduation, rows) => {
+  const arr = finalObj[institution][graduation] || []
+  rows.forEach((row)=>{
+    const found = arr.findIndex((item)=>(item.name === row.name))
+    if (found >= 0) {
+      Object.assign(arr[found], row)
+    } else {
+      arr.push(row)
+    }
+  })
+  finalObj[institution][graduation] = arr
+}
+
+const addLabel = (institution, graduation, rows) => {
+  const arr = finalObj[institution][graduation] || []
+  rows.forEach((row)=>{
+    const name = row[0]
+    const description = row[10] !== undefined ? row[10] : row[9]
+    const found = arr.findIndex((item)=>(item.name === name))
+    if (found >= 0) {
+      Object.assign(arr[found], {description})
+    } else {
+      arr.push({name, description})
+    }
+  })
+  finalObj[institution][graduation] = arr
+}
+
 const processExcelFile = async () => {
   const sheets = await getSheets(file)
 
   sheets.forEach(async (sheet) => {
     const sheetName = sheet.name
-    const obj = await getObjectFromSheet(file, sheetName)
     switch (sheetName) {
       case '4yr coll 4yr grad': {
-        finalObj['4yr']['4yr'] = obj.rows
+        const obj = await getObjectFromSheet(file, sheetName, schema)
+        addData('4yr', '4yr', obj.rows)
         replaceDestinationFile(finalObj)
         break
       }
       case '4yr coll 6yr grad': {
-        finalObj['4yr']['6yr'] = obj.rows
+        const obj = await getObjectFromSheet(file, sheetName, schema)
+        addData('4yr', '6yr', obj.rows)
         replaceDestinationFile(finalObj)
         break
       }
       case '2yr coll 4yr grad': {
-        finalObj['2yr']['4yr'] = obj.rows
+        const obj = await getObjectFromSheet(file, sheetName, schema)
+        addData('2yr', '4yr', obj.rows)
         replaceDestinationFile(finalObj)
         break
       }
       case '2yr coll 6yr grad': {
-        finalObj['2yr']['6yr'] = obj.rows
+        const obj = await getObjectFromSheet(file, sheetName, schema)
+        addData('2yr', '6yr', obj.rows)
         replaceDestinationFile(finalObj)
+        break
+      }
+      case 'Text 44': {
+        const arr = await getObjectFromSheet(file, sheetName)
+        addLabel('4yr', '4yr', arr)
+        replaceDestinationFile(finalObj)
+        break
+      }
+      case 'Text 46': {
+        const arr = await getObjectFromSheet(file, sheetName)
+        addLabel('4yr', '6yr', arr)
+        replaceDestinationFile(finalObj)
+        break
+      }
+      case 'Text 24': {
+        const arr = await getObjectFromSheet(file, sheetName)
+        addLabel('2yr', '4yr', arr)
+        replaceDestinationFile(finalObj)
+        break
+      }
+      case 'Text 26': {
+        const arr = await getObjectFromSheet(file, sheetName)
+        addLabel('2yr', '6yr', arr)
+        replaceDestinationFile(finalObj)
+        
         break
       }
 
       default: {
-        console.log('Sheet name doesn\'t match')
+        console.log(`${sheetName} doesn't get processed`)
       }
     }
   })
