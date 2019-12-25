@@ -1,11 +1,19 @@
 import React, {Component} from 'react'
+import {find} from 'lodash'
 
-import {getSchoolColor} from '../../lib/colors'
-import DataContext from '../../modules/dataContext'
+import {getSchoolColor} from '../lib/colors'
+import DataContext from '../modules/dataContext'
 
-import SchoolChip from '../../components/SchoolChip'
+import SchoolChip from './SchoolChip'
 
 class SchoolChips extends Component {
+  // We don't pass description in the selected object so we retrieve it here
+  getDescription  = (name) => {
+    const {data} = this.context
+    const found = find(data, {name})
+    return found.description
+  }
+  
   handleClose = (school) => {
     const {schools, setSchool} = this.context
     setSchool(schools.filter((skewl) => (skewl.value !== school)))
@@ -23,7 +31,7 @@ class SchoolChips extends Component {
               value={school.value}
               onClose={this.handleClose}
               color={getSchoolColor(school.value, schools)}
-              desc={hideDescription ? null : 'Something important here (e.g. school enrollment, school location)'}
+              desc={hideDescription ? null : this.getDescription(school.value)}
               closeable
             />
           ))

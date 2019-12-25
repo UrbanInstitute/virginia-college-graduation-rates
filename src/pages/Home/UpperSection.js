@@ -4,7 +4,7 @@ import SchoolSelector from '../../components/SchoolSelector'
 
 import RadioSection from './RadioSection'
 import UpperChart from './UpperChart'
-import SchoolChips from './SchoolChips'
+import SchoolChips from '../../components/SchoolChips'
 
 const UpperSection = () => {
   return (
