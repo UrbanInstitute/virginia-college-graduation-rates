@@ -58,9 +58,9 @@ class LowerSection extends Component  {
             <div className="entry">
               <span className="entry-number">4</span>
               <div className="entry-details">
-                <h2 className="h3 d-flex align-items-center">Choose your metric for comparison</h2>
+                <h2 className="h3 d-flex align-items-center">Choose student characteristics to learn more about our adjustments</h2>
                 <div className="my-3">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p>How do these adjustments work? It depends on how various groups of students perform at a particular school relative to their peers at other schools. Groups that perform better than the state average tend to pull the adjustment up, while groups that perform worse tend to pull it down.</p>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ class LowerSection extends Component  {
               </div>
               <div className="col-12 col-md-auto order-0 mb-2 d-block d-md-none">
                 <div className="form-group">
-                  <label className="sr-only" htmlFor="tab-dropdown">Choose your metric for comparison</label>
+                  <label className="sr-only" htmlFor="tab-dropdown">Pick a student characteristic and up to three schools to see how each school compares with the state average and with each other.</label>
                   <select className="form-control" id="tab-dropdown" value={selectedTab} onChange={(e) => {this.changeTab(e.target.value)}}>
                     {this.tabOptions()}
                   </select>

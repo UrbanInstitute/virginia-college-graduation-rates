@@ -50,7 +50,7 @@ class SchoolSelector extends Component {
       <div className="mt-3 clearfix mb-2">
         <Select
           className="basic-single mb-1"
-          placeholder="Select up to 3 schools"
+          placeholder="Add up to three schools"
           classNamePrefix="select"
           components={{
             ValueContainer: CustomValueContainer,

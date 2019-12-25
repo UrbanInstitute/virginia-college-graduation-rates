@@ -12,7 +12,7 @@ const UpperSection = () => {
       <form>
         <ul className="row list-unstyled">
           <RadioSection type="institution"/>
-          <RadioSection type="graduation" tooltip="Tooltip goes here"/>
+          <RadioSection type="graduation"/>
           <li className="col-12 col-lg-4">
             <div className="entry">
               <span className="entry-number">3</span>

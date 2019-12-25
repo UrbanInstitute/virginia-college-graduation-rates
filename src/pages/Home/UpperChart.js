@@ -109,11 +109,11 @@ class UpperChart extends Component {
       color: getSchoolColor(col.name, schools),
       data: [
         {
-          category: 'Unadjusted Scores',
+          category: 'Unadjusted graduation rate',
           score: col[`grad_rate_${graduation}`],
           schoolName: hoveredSchool === col.name || schoolArray.includes(col.name) ? col.name : null
         },
-        {category: 'Adjusted Scores', score: col[`adj_${graduation}_grad_rate`]},
+        {category: 'Adjusted graduation rate', score: col[`adj_${graduation}_grad_rate`]},
       ]
     }))
     // Move our schools to end of array so they are on top of chart
