@@ -20,7 +20,7 @@ jobs:
           name: Build and Deplot to stg
           command: |
             export DEPLOY_BUCKET=va-college-metrics-dashboard-stg
-            npm run build && aws s3 sync build/ s3://$DEPLOY_BUCKET
+            npm install && npm run build && aws s3 sync build/ s3://$DEPLOY_BUCKET
 
 workflows:
   version: 2
