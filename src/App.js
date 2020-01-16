@@ -10,7 +10,7 @@ import './App.scss'
 
 function App() {
   return (
-    <Router history={browserHistory} basename={"features/college-metrics-dashboard"}>
+    <Router history={browserHistory} basename={"features/college-metrics-dashboard/build"}>
       <div className="App">
         <UrbanBar />
         <Switch>
