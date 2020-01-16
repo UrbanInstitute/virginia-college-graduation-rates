@@ -1,6 +1,7 @@
 {
   "name": "college-metrics-dashboard",
   "version": "0.1.0",
+  "homepage": "http://apps.urban.org/features/virginia-college-graduation-rates",
   "private": true,
   "engines": {
     "node": ">=12.10.0"
