@@ -1,7 +1,7 @@
 {
   "name": "college-metrics-dashboard",
   "version": "0.1.0",
-  "homepage": "http://apps.urban.org/features/virginia-college-graduation-rates",
+  "homepage": "",
   "private": true,
   "engines": {
     "node": ">=12.10.0"
@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "history": "^4.10.1",
+    "http-server": "^0.12.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
     "react": "^16.12.0",
