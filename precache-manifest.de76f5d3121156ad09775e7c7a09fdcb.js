@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f5ab5008d3345765d602da13e045e2a",
+    "revision": "6dfa3dcbf40b66e3cfb514efe25afca0",
     "url": "/college-metrics-dashboard/index.html"
   },
   {
-    "revision": "12311ca886348e8078c4",
+    "revision": "c4508cb0af0148d9a0dc",
     "url": "/college-metrics-dashboard/static/css/main.ee60a3cd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/college-metrics-dashboard/static/js/2.50caa232.chunk.js.LICENSE"
   },
   {
-    "revision": "12311ca886348e8078c4",
-    "url": "/college-metrics-dashboard/static/js/main.cf25b2ba.chunk.js"
+    "revision": "c4508cb0af0148d9a0dc",
+    "url": "/college-metrics-dashboard/static/js/main.a9d58de0.chunk.js"
   },
   {
     "revision": "9e95bc4954c00637e729",
