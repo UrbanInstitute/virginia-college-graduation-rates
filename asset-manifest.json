@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/college-metrics-dashboard/static/css/main.ee60a3cd.chunk.css",
-    "main.js": "/college-metrics-dashboard/static/js/main.6aacb613.chunk.js",
-    "main.js.map": "/college-metrics-dashboard/static/js/main.6aacb613.chunk.js.map",
+    "main.js": "/college-metrics-dashboard/static/js/main.398858f5.chunk.js",
+    "main.js.map": "/college-metrics-dashboard/static/js/main.398858f5.chunk.js.map",
     "runtime-main.js": "/college-metrics-dashboard/static/js/runtime-main.cbf21352.js",
     "runtime-main.js.map": "/college-metrics-dashboard/static/js/runtime-main.cbf21352.js.map",
-    "static/js/2.934b0d93.chunk.js": "/college-metrics-dashboard/static/js/2.934b0d93.chunk.js",
-    "static/js/2.934b0d93.chunk.js.map": "/college-metrics-dashboard/static/js/2.934b0d93.chunk.js.map",
+    "static/js/2.a66ec1e1.chunk.js": "/college-metrics-dashboard/static/js/2.a66ec1e1.chunk.js",
+    "static/js/2.a66ec1e1.chunk.js.map": "/college-metrics-dashboard/static/js/2.a66ec1e1.chunk.js.map",
     "index.html": "/college-metrics-dashboard/index.html",
-    "precache-manifest.0ec50b59263159b5392b469b523450d4.js": "/college-metrics-dashboard/precache-manifest.0ec50b59263159b5392b469b523450d4.js",
+    "precache-manifest.bf56c0e94309f6190e8bc8f1f1c87b54.js": "/college-metrics-dashboard/precache-manifest.bf56c0e94309f6190e8bc8f1f1c87b54.js",
     "service-worker.js": "/college-metrics-dashboard/service-worker.js",
     "static/css/main.ee60a3cd.chunk.css.map": "/college-metrics-dashboard/static/css/main.ee60a3cd.chunk.css.map",
-    "static/js/2.934b0d93.chunk.js.LICENSE": "/college-metrics-dashboard/static/js/2.934b0d93.chunk.js.LICENSE",
+    "static/js/2.a66ec1e1.chunk.js.LICENSE": "/college-metrics-dashboard/static/js/2.a66ec1e1.chunk.js.LICENSE",
     "static/media/book-icon.svg": "/college-metrics-dashboard/static/media/book-icon.ccb09460.svg",
     "static/media/cap-icon.svg": "/college-metrics-dashboard/static/media/cap-icon.024aaa44.svg",
     "static/media/pencil-icon.svg": "/college-metrics-dashboard/static/media/pencil-icon.ce2ec0d5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cbf21352.js",
-    "static/js/2.934b0d93.chunk.js",
+    "static/js/2.a66ec1e1.chunk.js",
     "static/css/main.ee60a3cd.chunk.css",
-    "static/js/main.6aacb613.chunk.js"
+    "static/js/main.398858f5.chunk.js"
   ]
 }
