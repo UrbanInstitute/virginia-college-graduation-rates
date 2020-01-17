@@ -10,7 +10,7 @@ import './App.scss'
 
 function App() {
   return (
-    <HashRouter history={browserHistory} basename ='/'>
+    <HashRouter history={browserHistory}>
       <div className="App">
         <UrbanBar/>
         <Switch>
