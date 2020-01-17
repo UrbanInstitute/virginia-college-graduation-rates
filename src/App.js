@@ -10,7 +10,7 @@ import './App.scss'
 
 function App() {
   return (
-    <Router history={browserHistory}>
+    <Router history={browserHistory} basename ='/'>
       <div className="App">
         <UrbanBar />
         <Switch>
