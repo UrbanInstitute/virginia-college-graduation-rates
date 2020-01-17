@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/college-metrics-staging/static/css/main.ee60a3cd.chunk.css",
+    "main.js": "/college-metrics-staging/static/js/main.1a86b31e.chunk.js",
+    "main.js.map": "/college-metrics-staging/static/js/main.1a86b31e.chunk.js.map",
+    "runtime-main.js": "/college-metrics-staging/static/js/runtime-main.db0f84da.js",
+    "runtime-main.js.map": "/college-metrics-staging/static/js/runtime-main.db0f84da.js.map",
+    "static/js/2.50caa232.chunk.js": "/college-metrics-staging/static/js/2.50caa232.chunk.js",
+    "static/js/2.50caa232.chunk.js.map": "/college-metrics-staging/static/js/2.50caa232.chunk.js.map",
+    "index.html": "/college-metrics-staging/index.html",
+    "precache-manifest.9d6657296fd019d8e48e65f28ff5a90c.js": "/college-metrics-staging/precache-manifest.9d6657296fd019d8e48e65f28ff5a90c.js",
+    "service-worker.js": "/college-metrics-staging/service-worker.js",
+    "static/css/main.ee60a3cd.chunk.css.map": "/college-metrics-staging/static/css/main.ee60a3cd.chunk.css.map",
+    "static/js/2.50caa232.chunk.js.LICENSE": "/college-metrics-staging/static/js/2.50caa232.chunk.js.LICENSE",
+    "static/media/book-icon.svg": "/college-metrics-staging/static/media/book-icon.ccb09460.svg",
+    "static/media/cap-icon.svg": "/college-metrics-staging/static/media/cap-icon.024aaa44.svg",
+    "static/media/pencil-icon.svg": "/college-metrics-staging/static/media/pencil-icon.ce2ec0d5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db0f84da.js",
+    "static/js/2.50caa232.chunk.js",
+    "static/css/main.ee60a3cd.chunk.css",
+    "static/js/main.1a86b31e.chunk.js"
+  ]
+}
