@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/college-metrics-dashboard/precache-manifest.de76f5d3121156ad09775e7c7a09fdcb.js"
+  "/college-metrics-dashboard/precache-manifest.43f24709003f6f58d628fe49d147ede1.js"
 );
 
 self.addEventListener('message', (event) => {

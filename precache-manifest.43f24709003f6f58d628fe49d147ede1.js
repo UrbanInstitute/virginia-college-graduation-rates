@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6dfa3dcbf40b66e3cfb514efe25afca0",
+    "revision": "807ea70be3e0e8481f3b662eedb15b2a",
     "url": "/college-metrics-dashboard/index.html"
   },
   {
-    "revision": "c4508cb0af0148d9a0dc",
+    "revision": "bad533e6b6fb7e8ce2ff",
     "url": "/college-metrics-dashboard/static/css/main.ee60a3cd.chunk.css"
   },
   {
-    "revision": "77635318594531f6b6c8",
-    "url": "/college-metrics-dashboard/static/js/2.50caa232.chunk.js"
+    "revision": "3cd04759fe54405db29f",
+    "url": "/college-metrics-dashboard/static/js/2.934b0d93.chunk.js"
   },
   {
     "revision": "eaaf359e6284af6bdda1d61285291759",
-    "url": "/college-metrics-dashboard/static/js/2.50caa232.chunk.js.LICENSE"
+    "url": "/college-metrics-dashboard/static/js/2.934b0d93.chunk.js.LICENSE"
   },
   {
-    "revision": "c4508cb0af0148d9a0dc",
-    "url": "/college-metrics-dashboard/static/js/main.a9d58de0.chunk.js"
+    "revision": "bad533e6b6fb7e8ce2ff",
+    "url": "/college-metrics-dashboard/static/js/main.703bae80.chunk.js"
   },
   {
     "revision": "9e95bc4954c00637e729",
