@@ -32,10 +32,11 @@ class LowerSection extends Component  {
     const {selectedTab} = this.state
     const tabs = this.tabs()
     const sTab = tabs.includes(selectedTab) ?  selectedTab : this.tabs()[0]
+
     return this.tabs().map((tab, i) =>
       <span
         key={i}
-        className={`nav-link vertical-text ${sTab === tab ? 'active' : ''}`}
+        className={`nav-link vertical-text ${sTab === tab ? 'active' : 'inactive'}`}
         data-toggle="pill"
         role="tab"
         onClick={this.changeTab.bind(null, tab)}
@@ -60,7 +61,7 @@ class LowerSection extends Component  {
               <div className="entry-details">
                 <h2 className="h3 d-flex align-items-center">Choose student characteristics to learn more about our adjustments</h2>
                 <div className="my-3">
-                  <p>How do these adjustments work? It depends on how various groups of students perform at a particular school relative to their peers at other schools. Groups that perform better than the state average tend to pull the adjustment up, while groups that perform worse tend to pull it down.</p>
+                  <p>How do these adjustments work? It depends on the size of each subgroup at each school and on the statewide graduation rates. A school’s graduation rate will be adjusted upward if it has a relatively large population of students who graduate at lower levels than other groups across the state.</p>
                 </div>
               </div>
             </div>

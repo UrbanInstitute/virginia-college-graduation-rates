@@ -47,7 +47,7 @@ export const TAB_MAPPING = {
   },
   'Race': {
     heading: 'How do graduation rates vary by race or ethnicity, and how do they compare with state averages?',
-    subheading: <span>Race and ethnicity affect college graduation rates through myriad channels. For example, research has shown that <a target="_blank" rel="noopener noreferrer" href="https://www.nber.org/papers/w25254">having a same-race teacher</a> can have long-term effects on student achievement, but the <a target="_blank" rel="noopener noreferrer" href="https://www.urban.org/features/diversifying-classroom-examining-teacher-pipeline">teacher pipeline</a> does not produce enough teachers of color. Students of color are also more likely to attend <a target="_blank" rel="noopener noreferrer" href="https://www.uncf.org/pages/k-12-disparity-facts-and-stats">poorer-resourced high schools</a> that offer fewer college preparation courses, have less-qualified teachers, and spend less per student.</span>,
+    subheading: <span>The persistence of structural racism means that black and Hispanic students are, on average, less likely to graduate from college than their peers. For example, students of color are more likely to attend <a target="_blank" rel="noopener noreferrer" href="https://www.uncf.org/pages/k-12-disparity-facts-and-stats">poorly resourced high schools</a> that offer fewer college preparation courses, have less-qualified teachers, and spend less per student—all factors that affect students’ chances of success in college</span>,
     items: {
       asian: 'Asian',
       black: 'Black',

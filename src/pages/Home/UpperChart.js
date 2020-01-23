@@ -34,6 +34,7 @@ class UpperChart extends Component {
   }
 
   handleMouseOver = (hoveredSchool) => {
+    console.log(hoveredSchool)
     this.setState({hoveredSchool})
   }
 

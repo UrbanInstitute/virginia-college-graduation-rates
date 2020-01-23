@@ -42,7 +42,7 @@ export default class UrbanBar extends Component {
             className="urban-logo"
           >
           </a>
-          <a href="/">Features</a>
+          <a href="https://www.urban.org/features" target = "_blank">Features</a>
         </div>
 
         <div className="share-area">

@@ -38,19 +38,31 @@ html{
     transform: translateX(-46%);
     position: absolute;
   }
-  &::after {
-    content: '';
-    top: .5em;
-    left: .5em;
-    background-color: whitesmoke;
-    bottom: -.5em;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    border: 1px solid $card-border-color;
-  }
+}
 
+.card-page{
+  content: '';
+  background-color: whitesmoke;
+  bottom: -.5em;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  &.cp1{
+    left: 4px;
+    top: 3px;
+    z-index: -1;
+  }
+  &.cp2{
+    left: 7px;
+    top: 6px;
+    z-index: -2;
+  }
+  &.cp3{
+    left: 10px;
+    top: 9px;
+    z-index: -3;
+  }
 }
 
 .card-body {

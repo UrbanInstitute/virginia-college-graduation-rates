@@ -27,6 +27,9 @@ const Notebook = ({selectedTab}) => {
         </div>
         <LowerChart items={TAB_MAPPING[selectedTab]['items']} />
       </div>
+      <div className = "card-page cp1"></div>
+      <div className = "card-page cp2"></div>
+      <div className = "card-page cp3"></div>
     </div>
   )
 }

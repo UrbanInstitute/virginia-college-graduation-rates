@@ -21,10 +21,11 @@
     margin: 0;
   }
   a {
-    margin-left: 1em;
+    
     color: $body-color;
     font-size: 1.5em;
     font-weight: 100;
+    margin-left: 1em;
     &:hover {
       color: $primary;
       text-decoration: none;
@@ -60,6 +61,7 @@
     border: 1px solid #e6e5e5;
     display: none;
     height: 54px;
+    width: 150px;
     padding: 10px;
     position: absolute;
     right: -15px;
