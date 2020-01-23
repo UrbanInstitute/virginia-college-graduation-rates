@@ -45,21 +45,21 @@ html{
   background-color: whitesmoke;
   bottom: -.5em;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: calc(100% + 1px);
+  width: calc(100% + 1px);
   border: 1px solid rgba(0, 0, 0, 0.125);
   &.cp1{
-    left: 4px;
+    left: 3px;
     top: 3px;
     z-index: -1;
   }
   &.cp2{
-    left: 7px;
+    left: 6px;
     top: 6px;
     z-index: -2;
   }
   &.cp3{
-    left: 10px;
+    left: 9px;
     top: 9px;
     z-index: -3;
   }
