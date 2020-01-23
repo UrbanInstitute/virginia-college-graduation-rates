@@ -32,11 +32,12 @@ class LowerSection extends Component  {
     const {selectedTab} = this.state
     const tabs = this.tabs()
     const sTab = tabs.includes(selectedTab) ?  selectedTab : this.tabs()[0]
+    const sIndex = tabs.indexOf(selectedTab)
 
     return this.tabs().map((tab, i) =>
       <span
         key={i}
-        className={`nav-link vertical-text ${sTab === tab ? 'active' : 'inactive'}`}
+        className={`nav-link vertical-text ${sTab === tab ? 'active' : (i < sIndex)?  'inactive' : 'inactive'}`}
         data-toggle="pill"
         role="tab"
         onClick={this.changeTab.bind(null, tab)}
