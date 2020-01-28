@@ -2383,7 +2383,8 @@ const data =
         'testscore_4th_quintile': 26,
         'testscore_highest_quintile': 36,
         'fulltime': 28,
-        'parttime': 11
+        'parttime': 11,
+        'description': "asdlfkjasdpf"
       },
       {
         'name': 'Dabney S. Lancaster Community College',
