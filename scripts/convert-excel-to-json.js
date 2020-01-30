@@ -187,19 +187,30 @@ const finalObj = {
 
 const addData = (institution, graduation, rows) => {
   const arr = finalObj[institution][graduation] || []
+  if(institution == "4yr" && graduation == "4yr"){
+    console.log(rows)
+  }
   rows.forEach((row)=>{
     const found = arr.findIndex((item)=>(item.name === row.name))
+    // console.log(found)
     if (found >= 0) {
       Object.assign(arr[found], row)
     } else {
       arr.push(row)
     }
   })
+  if(institution == "4yr" && graduation == "4yr"){
+  console.log(finalObj[institution][graduation])
+}
   finalObj[institution][graduation] = arr
 }
 
 const addLabel = (institution, graduation, rows) => {
   const arr = finalObj[institution][graduation] || []
+  // console.log(institution, graduation)
+  // if(institution == "4yr" && graduation == "4yr"){
+  //   console.log(finalObj)
+  // }
   rows.forEach((row)=>{
     const name = row[0]
     const description = row[10] !== undefined ? row[10] : row[9]
@@ -215,6 +226,8 @@ const addLabel = (institution, graduation, rows) => {
 
 const processExcelFile = async () => {
   const sheets = await getSheets(file)
+
+  console.log(sheets)
 
   sheets.forEach(async (sheet) => {
     const sheetName = sheet.name

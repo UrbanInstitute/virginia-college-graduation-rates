@@ -9,42 +9,55 @@
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
     <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
     <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#158bcc">
-    <meta name="apple-mobile-web-app-title" content="Education Funding Calculator">
-    <meta name="application-name" content="Education Funding Calculator">
     <meta name="msapplication-TileColor" content="#158bcc">
     <meta name="theme-color" content="#158bcc">
 
-    <meta name="description" content="Make and analyze changes to your state education funding formula"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@urbaninstitute">
+    <meta name="twitter:creator" content="@urbaninstitute">
+    <meta name="twitter:title" content="What’s in a College’s Graduation Rate?">
+    <meta name="twitter:description" content="A Virginia Case Study">
+    <meta name="twitter:image" content="http://apps.urban.org/features/virginia-college-graduation-rates/social.jpg">
+    <meta property="og:title" content="What’s in a College’s Graduation Rate?" />
+    <meta property="og:description" content="A Virginia Case Study" />
+    <meta property="og:image" content="http://apps.urban.org/features/virginia-college-graduation-rates /social.jpg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:url" content="https://urbn.is/gradrates">
 
-    <meta property="og:title" content="Directing Dollars to School Districts | Urban Institute"/>
-    <meta property="og:description" content="Make and analyze changes to your state education funding formula"/>
-    <meta property="og:image" content="%PUBLIC_URL%/efc-facebook.png"/>
-    <meta property="og:image:height" content="630"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:url" content="%PUBLIC_URL%/"/>
-
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@urbaninstitute"/>
-    <meta name="twitter:title" content="Directing Dollars to School Districts | Urban Institute"/>
-    <meta name="twitter:description" content="Make and analyze changes to your state education funding formula"/>
-    <meta name="twitter:image" content="%PUBLIC_URL%/efc-twitter.png"/>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i&display=swap" rel="stylesheet"> 
 
     <title>College Metrics Dashboard</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GA_ID%"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-     gtag('config', '%REACT_APP_GA_ID%');
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "What’s in a College’s Graduation Rate?",
+      "url": "http://apps.urban.org/features/virginia-college-graduation-rates",
+      "thumbnailUrl": "http://apps.urban.org/features/virginia-college-graduation-rates/social.jpg",
+      "dateCreated": "2020-01-31T05:00:00.000Z",
+      "articleSection": "Interactive Feature",
+      "creator": ["Erica Blom","Macy Rainer","Allison Feldman","David Hinson","Serena Lei"],
+      "keywords": ["Education and Training"]
+    }
     </script>
+
+
+
 
   </head>
   <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MKBD2W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MKBD2W');</script>
+<!-- End Google Tag Manager -->
+
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -59,5 +72,40 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- START Google Analytics -->
+  <script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function () { 
+  (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m) 
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); 
+  ga('create', 'UA-57529944-1', 'auto'); 
+  ga('send', 'pageview');
+  </script>
+  <!-- END Google Analytics -->
+
+  <!-- START Parse.ly Include: Standard -->
+  <div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="urban.org"></span>
+  </div>
+  <script>
+  (function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+  e=d.getElementById(i), r=d.getElementById(p+"-root"),
+  u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+  :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+  })("script", "parsely", document);
+  </script>
+  <!-- END Parse.ly Include: Standard -->
+
   </body>
 </html>

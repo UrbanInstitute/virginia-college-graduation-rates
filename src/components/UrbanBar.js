@@ -12,11 +12,11 @@ export default class UrbanBar extends Component {
 
   shareTo = (service) => {
     const params = {
-      facebook: {u: window.location.href},
-      twitter: {text: window.location.href},
+      facebook: {u: "https://urbn.is/gradrates"},
+      twitter: {text: "From @urbaninstitute: What’s in a College’s Graduation Rate? A Virginia Case Study. https://urbn.is/gradrates"},
       email: {
-        Subject: 'College Metrics Dashboard',
-        Body: window.location.href,
+        Subject: 'New Urban Institute interactive',
+        Body: "Hi! I thought you'd be interested in this new interactive from the Urban Institute: “What’s in a College’s Graduation Rate? A Virginia Case Study.” https://urbn.is/gradrates",
       },
     }[service]
 

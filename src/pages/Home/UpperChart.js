@@ -61,7 +61,7 @@ class UpperChart extends Component {
       document.body &&
       document.body.clientWidth < 769
     ) {
-      this.setState({margin: 85})
+      this.setState({margin: 0})
     } else {
       this.setState({margin: 150})
     }
@@ -133,6 +133,7 @@ class UpperChart extends Component {
             interval="preserveStartEnd"
             orientation="left"
             tickLine={false}
+            padding={{ top: 10 }}
             ticks={[min, institution === '2yr' ? max : 100]}
             unit="%"
           />

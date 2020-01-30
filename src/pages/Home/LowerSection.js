@@ -57,7 +57,7 @@ class LowerSection extends Component  {
       <section>
         <div className="row mb-5">
           <div className="col-12">
-            <div className="entry">
+            <div className="entry entryBottom">
               <span className="entry-number">4</span>
               <div className="entry-details">
                 <h2 className="h3 d-flex align-items-center">Choose student characteristics to learn more about our adjustments</h2>

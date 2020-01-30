@@ -29,8 +29,8 @@ const Header = () => (
     </div>
     <div className="row justify-content-center mb-5">
       <div className="col-12">
-        <p className="font-weight-light font-italic h3">Which colleges actually help students graduate? Raw graduation rates don’t show us which schools improve students’ chances of earning a degree and which ones enroll students who are already likely to graduate.</p>
-        <p className="font-weight-light font-italic h3">So we used a better measure of the difference a school makes and applied it to Virginia’s colleges and universities. By adjusting for student characteristics that predict the likelihood of graduating (such as <a target="_blank" rel="noreferrer noopener" href="https://www.nytimes.com/2015/06/02/upshot/for-the-poor-the-graduation-gap-is-even-wider-than-the-enrollment-gap.html">race</a>
+        <p className="font-weight-light font-italic h3 introP">Which colleges actually help students graduate? Raw graduation rates don’t show us which schools improve students’ chances of earning a degree and which ones enroll students who are already likely to graduate.</p>
+        <p className="font-weight-light font-italic h3 introP">So we used a better measure of the difference a school makes and applied it to Virginia’s colleges and universities. By adjusting for student characteristics that predict the likelihood of graduating (such as <a target="_blank" rel="noreferrer noopener" href="https://www.nytimes.com/2015/06/02/upshot/for-the-poor-the-graduation-gap-is-even-wider-than-the-enrollment-gap.html">race</a>
           , <a target="_blank" rel="noreferrer noopener" href="https://www.thirdway.org/report/what-matters-most-for-college-completion-academic-preparation-is-a-key-of-success">academic preparation</a>
           , and <a target="_blank" rel="noreferrer noopener" href="https://www.washingtonpost.com/news/storyline/wp/2014/10/20/why-poor-kids-dont-stay-in-college/">Pell grant status</a>
           ), we can get closer to the real value that schools provide.</p>

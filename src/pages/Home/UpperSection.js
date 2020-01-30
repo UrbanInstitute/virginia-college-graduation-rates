@@ -14,7 +14,7 @@ const UpperSection = () => {
           <RadioSection type="institution"/>
           <RadioSection type="graduation"/>
           <li className="col-12 col-lg-4">
-            <div className="entry">
+            <div className="entry entryTop">
               <span className="entry-number">3</span>
               <div className="entry-details">
                 <h2 className="h3 d-flex align-items-center">Choose your school (optional)</h2>

@@ -59,7 +59,7 @@ class RadioSection extends Component {
     const group = groups[type]
     return (
       <li className="col-12 col-lg-4">
-        <div className="entry">
+        <div className="entry entryTop">
           <span className="entry-number">{group.number}</span>
           <div className="entry-details">
             <h2 className="h3 d-flex align-items-center">
