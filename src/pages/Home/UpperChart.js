@@ -5,6 +5,7 @@ import {
   Line,
   XAxis,
   YAxis,
+  Text
 } from 'recharts'
 import {cloneDeep} from 'lodash'
 
@@ -100,6 +101,7 @@ class UpperChart extends Component {
     window.addRemoveListener(this.resizeHandle)
   }
 
+
   render() {
     const {graduation, institution, data, schools} = this.context
     const {hoveredSchool, margin} = this.state
@@ -120,12 +122,32 @@ class UpperChart extends Component {
     // Move our schools to end of array so they are on top of chart
     series = this.reorderSeries(series)
     const [min, max] = getMinMaxValuesFromSeries(series)
+
+class CustomizedAxisTick extends Component{
+  render () {
+    const {x, y, payload} = this.props;
+    
+    return <Text x={x} y={y} width={120} textAnchor="middle" verticalAnchor="start" className="customizedAxisTick">{payload.value}</Text>
+  }
+}
+
+
+
     return (
       <ResponsiveContainer className="upper-chart">
         <LineChart
-          margin={{left: margin}}
+          margin={{left: margin, bottom: 50}}
         >
-          <XAxis dataKey="category" allowDuplicatedCategory={false} axisLine={false} dy={0} tickMargin={10} />
+          <XAxis
+            dataKey="category"
+            allowDuplicatedCategory={false}
+            axisLine={false}
+            dy={0}
+            tickMargin={15}
+            tickCount={2}
+            interval={0}
+            tick={<CustomizedAxisTick />}
+          />
           <YAxis
             yAxisId="line"
             dataKey="score"
