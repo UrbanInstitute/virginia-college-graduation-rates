@@ -595,7 +595,7 @@ const data =
       },
       {
         "name": "Southern Virginia University",
-        "description": "Southern Virginia University, a public liberal arts college in Buena Vista,  does not change its rank, despite an increase of 7 percentage points in its graduation rate.",
+        "description": "Southern Virginia University, a private liberal arts college in Buena Vista,  does not change its rank, despite an increase of 7 percentage points in its graduation rate.",
         "grad_rate_6yr": 22,
         "adj_6yr_grad_rate": 28,
         "white": 23,
@@ -1521,7 +1521,7 @@ const data =
       },
       {
         "name": "Southern Virginia University",
-        "description": "Southern Virginia University, a public liberal arts college in Buena Vista, does not change its rank, despite an increase of 7 percentage points in its graduation rate.",
+        "description": "Southern Virginia University, a private liberal arts college in Buena Vista, does not change its rank, despite an increase of 7 percentage points in its graduation rate.",
         "grad_rate_4yr": 10,
         "adj_4yr_grad_rate": 18,
         "white": 11,

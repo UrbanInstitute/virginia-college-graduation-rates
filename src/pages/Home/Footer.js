@@ -19,6 +19,8 @@ class Footer extends Component  {
             <h3>Four-year colleges</h3>
             <p>The four-year analyses include freshmen in baccalaureate programs. Virginia Intermont College and Saint Paul’s College are excluded (both schools have closed), as is Averett University Non-Traditional Programs (small sample size). SAT math and reading scores are included separately in the model as continuous variables but are summed and reported in quintiles for expositional purposes. High school GPA is similarly included as a continuous variable but is reported in quintiles.</p>
 
+            <p style={{marginTop: 43 + 'px'}}>Southern Virginia University was previously misidentified as a public college, but it is a private nonprofit college (corrected 2/6/20).</p>
+
             <h2 className="mt-5 ">Project Credits</h2>
             <p className="font-italic mb-4">This feature was supported by <a href="https://www.arnoldventures.org/">Arnold Ventures</a>. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission. The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders. Funders do not determine research findings or the insights and recommendations of our experts. More information on our funding principles is available <a href="https://www.urban.org/support/funding-principles">here</a>. Read our terms of service <a href="https://www.urban.org/terms-service">here</a>.</p>
 
